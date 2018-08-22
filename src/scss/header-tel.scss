@@ -1,0 +1,29 @@
+.header-tel {
+   display: flex;
+   align-items: center;
+}
+
+.header-tel__icon {
+   width: 20px;
+   height: 18px;
+   margin-right: 10px;
+   fill: #fff;
+}
+
+.header-tel__number {
+   color: #fff;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1;
+   white-space: nowrap;
+   &:hover {
+      color: #fff;
+      text-decoration: none;
+   }
+}
+
+@media screen and (max-width: $breakpoint-large) {
+    .header-tel {
+        display: none;
+    }
+}

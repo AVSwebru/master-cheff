@@ -1,0 +1,28 @@
+.catalog-slider__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.catalog-slider__prev {
+    left: 10px;
+    .catalog-slider__nav-icon {
+        transform: rotate(180deg);
+    }
+}
+
+.catalog-slider__next {
+    right: 10px;
+}
+
+.catalog-slider__nav-icon {
+    width: 60px;
+    height: 80px;
+    fill: #ebeeea;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .catalog-slider {
+        display: none;
+    }
+}

@@ -1,0 +1,28 @@
+.footer-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+        position: relative;
+        &::before {
+            content: '';
+            width: 3px;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 9px;
+            left: -10px;
+        }
+    }
+    a {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .footer-nav  {
+        padding-left: 10px;
+    }
+}	
+

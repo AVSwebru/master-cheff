@@ -1,0 +1,28 @@
+.header {
+    background-color: $theme-color;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__leftside {
+    padding: 14px 0;
+}
+
+.header__rightside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    padding: 14px 0;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .header__rightside {
+        justify-content: right;
+    }
+}	
+

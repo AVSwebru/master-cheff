@@ -1,0 +1,12 @@
+.search-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-btn__icon {
+    width: 25px;
+    height: 26px;
+    fill: $theme-color;
+}

@@ -1,0 +1,27 @@
+.catalog-btn {
+    padding: 23px 20px 23px 14px;
+    background-color: #eaefea;
+    border: none;
+    white-space: nowrap;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    &:hover {
+        background-color: darken(#eaefea, 10%);
+        transition: background-color 0.25s;
+    }
+}
+
+.catalog-btn__icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    fill: #000000;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .catalog-btn {
+        margin-right: 10px;
+        padding: 23px 10px;
+    }
+}	
