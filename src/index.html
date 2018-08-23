@@ -8,7 +8,7 @@
     <link href="main.css" rel="stylesheet">
 </head>
 <body class="resume page">
-    <header class="header" uk-sticky> 
+    <header class="header" data-uk-sticky> 
         <div class="uk-container">
             <div class="header__inner">
                 <div class="header__leftside uk-width-1-5">
@@ -28,9 +28,9 @@
                             <li><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
-                    <a class="header__header-tel header-tel" href="tel: +79204228167">
+                    <a class="header__header-tel header-tel" href="tel:79204228167">
                         <svg class="header-tel__icon">
-                            <use xlink:href="#smartphone">
+                            <use xlink:href="#smartphone"/>
                         </svg>
                         <span class="header-tel__number">+7 (920) 422-81-67</span>
                     </a> 
@@ -50,7 +50,7 @@
                     <div class="control-bar__leftside">
                         <button class="control-bar__catalog-btn catalog-btn js-catalog-btn" type="button">
                             <svg class="catalog-btn__icon">
-                                <use xlink:href="#menu">
+                                <use xlink:href="#menu"/>
                             </svg>
                             Каталог
                         </button>
@@ -66,13 +66,13 @@
                         <div class="control-bar__search">
                             <button class="control-bar__search-btn search-btn js-search-btn" type="button">
                                 <svg class="search-btn__icon">
-                                    <use xlink:href="#search">
+                                    <use xlink:href="#search"/>
                                 </svg>
                             </button>
                         </div>
                         <a class="cart-btn" href="#">
                             <svg class="cart-btn__icon">
-                                <use xlink:href="#cart">
+                                <use xlink:href="#cart"/>
                             </svg>
                             <span class="cart-btn__text">
                                 <span>
@@ -86,9 +86,9 @@
                     </div>
                     <div class="search-bar js-search-bar">
                         <form class="uk-width-1-1">
-                            <input class="search__input uk-input" type="text" name="search" placeholder="Искать">
+                            <input class="search__input uk-input" type="search" name="search" placeholder="Искать">
                         </form>
-                        <button class="search-bar__close-btn js-search-close" type="button" uk-close></button>
+                        <button class="search-bar__close-btn js-search-close" type="button" data-uk-close></button>
                     </div>
                     <div class="catalog-full" hidden>
                         <ul>
@@ -134,17 +134,17 @@
                             </li>
                             <li><a class="catalog-full__heading catalog-full__heading_new" href="#">Новинки</a></li>
                         </ul>
-                        <button class="catalog-full__close-btn uk-close-large js-catalog-close" type="button" uk-close></button>
+                        <button class="catalog-full__close-btn uk-close-large js-catalog-close" type="button" data-uk-close></button>
                     </div>
                 </div> 
             </div>
         </div>
         <div class="catalog-slider">
             <div class="uk-container">
-                <div class="uk-position-relative" uk-slideshow="max-height: 400; autoplay: true; autoplay-interval: 24000" >
+                <div class="uk-position-relative" data-uk-slideshow="max-height: 400; autoplay: true; autoplay-interval: 4000" >
                     <ul class="uk-slideshow-items">
                         <li>
-                            <div class="catalog-slide" uk-grid>
+                            <div class="catalog-slide" data-uk-grid>
                                 <div class="catalog-slide__leftside uk-width-1-2@s uk-width-2-5@l">
                                     <div class="catalog-slide__content">
                                         <h3 class="catalog-slide__title">
@@ -157,7 +157,7 @@
                                     </div>
                                 </div>
                                 <div class="catalog-slide__rightside  uk-width-1-2@s uk-width-3-5@l uk-cover-container">
-                                    <img src="img/catalog-slide-1.jpg" alt="" uk-cover>
+                                    <img src="img/catalog-slide-1.jpg" alt="" data-uk-cover>
                                 </div>
                             </div> 
                         </li>
@@ -175,19 +175,19 @@
                                     </div>
                                 </div>
                                 <div class="catalog-slide__rightside uk-width-1-2 uk-width-3-5@m uk-cover-container">
-                                    <img src="img/catalog-slide-1.jpg" alt="" uk-cover>
+                                    <img src="img/catalog-slide-1.jpg" alt="" data-uk-cover>
                                 </div>
                             </div>    
                         </li>
                     </ul>
-                    <a class="catalog-slider__nav catalog-slider__prev uk-hidden-hover" href="#" uk-slideshow-item="previous">
+                    <a class="catalog-slider__nav catalog-slider__prev uk-hidden-hover" href="#" data-uk-slideshow-item="previous">
                         <svg class="catalog-slider__nav-icon">
-                            <use xlink:href="#arrow">
+                            <use xlink:href="#arrow"/>
                         </svg> 
                     </a>
-                    <a class="catalog-slider__nav catalog-slider__next uk-hidden-hover" href="#" uk-slideshow-item="next">
+                    <a class="catalog-slider__nav catalog-slider__next uk-hidden-hover" href="#" data-uk-slideshow-item="next">
                         <svg class="catalog-slider__nav-icon">
-                            <use xlink:href="#arrow">
+                            <use xlink:href="#arrow"/>
                         </svg> 
                     </a>
                 </div>
@@ -195,8 +195,8 @@
         </div>
         <div class="banners">
             <div class="uk-container">
-                <h1 class="banners__title" uk-scrollspy="cls: uk-animation-slide-top">Посуда для баров и ресторанов</h1>
-                <div class="banners__subtitle" uk-scrollspy="cls: uk-animation-slide-top">Поставка оборудования для ресторанов, кафе, баров и предприятий общественного питания, оптом и в розницу.</div>
+                <h1 class="banners__title" data-uk-scrollspy="cls: uk-animation-slide-top">Посуда для баров и ресторанов</h1>
+                <div class="banners__subtitle" data-uk-scrollspy="cls: uk-animation-slide-top">Поставка оборудования для ресторанов, кафе, баров и предприятий общественного питания, оптом и в розницу.</div>
                 <div class="banners-grid">
                     <div>
                         <a class="banner-item uk-transition-toggle" href="#">
@@ -240,10 +240,10 @@
             <div class="uk-container">
                 <div class="about__inner">
                     <div class="about__leftside">
-                        <div class="about__title" uk-scrollspy="cls: uk-animation-slide-left">
+                        <div class="about__title" data-uk-scrollspy="cls: uk-animation-slide-left">
                             MasterSheff <span>—</span>
                         </div>
-                        <div class="about__text" uk-scrollspy="cls: uk-animation-slide-left">
+                        <div class="about__text" data-uk-scrollspy="cls: uk-animation-slide-left">
                             <p>Компания Мастершефф вот уже более пяти лет помогает владельцам ресторанов, баров,
                             кафе и гостиниц оснащать свои заведения высококачественной посудой и инвентарем.
                             
@@ -259,7 +259,7 @@
                         <button class="about__learnmore learnmore">Подробнее</button>
                     </div>
                     <div class="about__rightside">
-                        <img src="img/about-photo.png" alt="" uk-scrollspy="cls: uk-animation-slide-right">
+                        <img src="img/about-photo.png" alt="" data-uk-scrollspy="cls: uk-animation-slide-right">
                     </div>
                 </div>
             </div>
@@ -269,7 +269,7 @@
                 <div class="clients__title">
                     Нам доверяют
                 </div>
-                <div uk-slider="autoplay: truel; autoplay-interval: 2000">
+                <div data-uk-slider="autoplay: truel; autoplay-interval: 2000">
                     <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-6@m uk-grid">
                         <li class="uk-flex uk-flex-center uk-flex-middle">
                             <img src="img/client-1.png" alt="">
@@ -285,7 +285,7 @@
                         </li>
                         <li class="uk-flex uk-flex-center uk-flex-middle">
                             <img src="img/client-5.png" alt="">
-                        </li class="uk-flex uk-flex-center uk-flex-middle">
+                        </li>
                         <li class="uk-flex uk-flex-center uk-flex-middle">
                             <img src="img/client-6.png" alt="">
                         </li>
@@ -305,7 +305,7 @@
     </main>
     <footer class="footer">
         <div class="uk-container">
-            <div class="footer__top uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+            <div class="footer__top uk-child-width-1-2@s uk-child-width-1-4@m" data-uk-grid>
                 <div>
                     <ul class="footer-nav">
                         <li><a href="#">Клиенты</a></li>
@@ -344,26 +344,26 @@
                             09:00 - 18:00
                         </div>
                         отдел продаж<br>
-                        <a class="footer-contacts__number" href="tel: +79204228167">+7 (920) 422-81-67</a>
+                        <a class="footer-contacts__number" href="tel:79204228167">+7 (920) 422-81-67</a>
                         <ul class="footer-social">
                             <li>
                                 <a href="#">
                                     <svg class="footer-social__icon footer-social__icon_vk">
-                                        <use xlink:href="#vk">
+                                        <use xlink:href="#vk"/>
                                     </svg> 
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <svg class="footer-social__icon footer-social__icon_instagram">
-                                        <use xlink:href="#instagram">
+                                        <use xlink:href="#instagram"/>
                                     </svg> 
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
                                     <svg class="footer-social__icon footer-social__icon_facebook">
-                                        <use xlink:href="#facebook">
+                                        <use xlink:href="#facebook"/>
                                     </svg> 
                                 </a>
                             </li>
