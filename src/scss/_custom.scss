@@ -3,6 +3,7 @@
 // 1. Your custom variables and variable overwrites.
 $global-font-family: 'Lato', sans-serif;
 $base-body-font-weight: 400;
+$breakpoint-large: 1300px;
 
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables-theme.scss";

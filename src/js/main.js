@@ -2,7 +2,7 @@ import './uikit';
 import './sprite';
 
 //search-bar toggler
-import SearchBarToggler from './search-bar';
+import searchBarToggler from './search-bar';
 
 const searchElements = {
     searchToggler: document.querySelector('.js-search-btn'),
@@ -10,10 +10,10 @@ const searchElements = {
     searchClose: document.querySelector('.js-search-close')
 };
 
-SearchBarToggler(searchElements);
+searchBarToggler(searchElements);
 
 //catalog toggler
-import CatalogToggler from './catalog';
+import catalogToggler from './catalog';
 
 const catalogElements = {
     catalog: document.querySelector('.catalog-full'),
@@ -22,7 +22,7 @@ const catalogElements = {
     catalogCloseBtn: document.querySelector('.js-catalog-close')
 };
 
-CatalogToggler(catalogElements);
+catalogToggler(catalogElements);
 
 //menu toggler
 import menuToggler from './menu';

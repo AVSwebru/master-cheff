@@ -14,10 +14,13 @@
 
 .header__rightside {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
-    width: 65%;
     padding: 14px 0;
+}
+
+.header__header-tel {
+    margin-left: 25px;
 }
 
 @media screen and (max-width: $breakpoint-medium) {

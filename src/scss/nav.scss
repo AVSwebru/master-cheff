@@ -56,6 +56,7 @@
                 width: 100%;
                 overflow-y: scroll;
                 flex-direction: column;
+                animation: appereance 0.25s 0.5s ease-in both;
             }
             li {
                 margin-right: 0;
@@ -78,5 +79,16 @@
         border-radius: none;
         transform: scale(1);
         transform-origin: 50% 0;
+    }
+}
+
+@keyframes appereance {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 1;
     }
 }

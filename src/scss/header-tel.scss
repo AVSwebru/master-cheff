@@ -1,6 +1,10 @@
 .header-tel {
    display: flex;
    align-items: center;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 .header-tel__icon {
@@ -16,10 +20,6 @@
    font-weight: 400;
    line-height: 1;
    white-space: nowrap;
-   &:hover {
-      color: #fff;
-      text-decoration: none;
-   }
 }
 
 @media screen and (max-width: $breakpoint-large) {
