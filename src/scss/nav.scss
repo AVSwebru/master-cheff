@@ -43,13 +43,15 @@
         &_isOpened {
             display: flex;
             justify-content: center;
+            width: 100vw;
+            height: 100vh;
             padding: 20px 0;
             position: fixed;
             top: 60px;
             left: 0;
             right: 0;
             bottom: 0;
-            z-index: 5;
+            z-index: 10;
             background-color: $theme-color;
             animation: scale-up 0.5s ease-out both;
             ul {

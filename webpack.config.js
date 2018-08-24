@@ -34,14 +34,18 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'main.css'
+                            name: 'main.css',
+                            outputPath: 'css/'
                         }
                     },
                     {
                         loader: 'extract-loader',
                     },
                     {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
+                        options: {
+                            url: false
+                        }
                     }, 
                     {
                         loader: 'postcss-loader', 
@@ -79,7 +83,8 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[name].[ext]'
+                            name: '[name].[ext]',
+                            outputPath: 'html/'
                         }
                     },
                     {

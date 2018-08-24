@@ -9,6 +9,8 @@
     cursor: pointer;
     transition: background-color 0.25s;
     &:hover {
+        color: #fff;
         transition: background-color 0.25s;
+        text-decoration: none;
     }
 }
