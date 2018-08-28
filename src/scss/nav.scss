@@ -70,27 +70,3 @@
         }
     }
 }	
-
-@keyframes scale-up {
-    0% {
-        border-radius: 100%;
-        transform: scale(0);
-        transform-origin: 50% 0;
-    }
-    100% {
-        border-radius: none;
-        transform: scale(1);
-        transform-origin: 50% 0;
-    }
-}
-
-@keyframes appereance {
-    0% {
-        transform: translateY(0);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(20px);
-        opacity: 1;
-    }
-}

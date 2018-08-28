@@ -1,0 +1,68 @@
+@keyframes hovering {
+    0% {
+        border-top-color: $theme-color;
+    }
+    25% {
+        border-top-color: $theme-color;
+        border-right-color: $theme-color;
+    }
+    50% {
+        border-top-color: $theme-color;
+        border-right-color: $theme-color;
+        border-bottom-color: $theme-color;
+    }
+    100% {
+        border-top-color: $theme-color;
+        border-right-color: $theme-color;
+        border-bottom-color: $theme-color;
+        border-left-color: $theme-color;
+    }
+}
+
+@keyframes scale-up {
+    0% {
+        border-radius: 100%;
+        transform: scale(0);
+        transform-origin: 50% 0;
+    }
+    100% {
+        border-radius: none;
+        transform: scale(1);
+        transform-origin: 50% 0;
+    }
+}
+
+@keyframes appereance {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-360px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(-360px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+

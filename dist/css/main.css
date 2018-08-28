@@ -9945,6 +9945,126 @@ iframe.uk-cover {
   h3 {
     page-break-after: avoid; } }
 
+@-webkit-keyframes hovering {
+  0% {
+    border-top-color: #3c3695; }
+  25% {
+    border-top-color: #3c3695;
+    border-right-color: #3c3695; }
+  50% {
+    border-top-color: #3c3695;
+    border-right-color: #3c3695;
+    border-bottom-color: #3c3695; }
+  100% {
+    border-top-color: #3c3695;
+    border-right-color: #3c3695;
+    border-bottom-color: #3c3695;
+    border-left-color: #3c3695; } }
+
+@keyframes hovering {
+  0% {
+    border-top-color: #3c3695; }
+  25% {
+    border-top-color: #3c3695;
+    border-right-color: #3c3695; }
+  50% {
+    border-top-color: #3c3695;
+    border-right-color: #3c3695;
+    border-bottom-color: #3c3695; }
+  100% {
+    border-top-color: #3c3695;
+    border-right-color: #3c3695;
+    border-bottom-color: #3c3695;
+    border-left-color: #3c3695; } }
+
+@-webkit-keyframes scale-up {
+  0% {
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0; }
+  100% {
+    border-radius: none;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0; } }
+
+@keyframes scale-up {
+  0% {
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0; }
+  100% {
+    border-radius: none;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0; } }
+
+@-webkit-keyframes appereance {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 1; } }
+
+@keyframes appereance {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 1; } }
+
+@-webkit-keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(-360px);
+            transform: translateX(-360px);
+    opacity: 1; } }
+
+@keyframes slide-in {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(-360px);
+            transform: translateX(-360px);
+    opacity: 1; } }
+
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(-360px);
+            transform: translateX(-360px);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0; } }
+
+@keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(-360px);
+            transform: translateX(-360px);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0; } }
+
 @font-face {
   font-family: 'Lato';
   src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato/Lato-Regular.woff") format("woff");
@@ -10075,54 +10195,6 @@ iframe.uk-cover {
         margin-bottom: 20px; }
       .nav_isOpened a {
         font-size: 24px; } }
-
-@-webkit-keyframes scale-up {
-  0% {
-    border-radius: 100%;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0; }
-  100% {
-    border-radius: none;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0; } }
-
-@keyframes scale-up {
-  0% {
-    border-radius: 100%;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0; }
-  100% {
-    border-radius: none;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0; } }
-
-@-webkit-keyframes appereance {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-    opacity: 1; } }
-
-@keyframes appereance {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-    opacity: 1; } }
 
 .control-bar__inner {
   display: flex;
@@ -10302,21 +10374,22 @@ iframe.uk-cover {
 
 .catalog-slide__title {
   margin-bottom: 5px;
-  color: #000000;
+  color: #000;
   font-size: 36px;
   text-transform: uppercase; }
 
 .catalog-slide__subtitle {
   margin-bottom: 25px;
-  color: #666666;
+  color: #666;
   font-family: Lato;
   font-size: 18px;
   font-weight: 400; }
 
 .catalog-slide__learnmore {
   background-color: #3c3695;
-  color: #ffffff; }
+  color: #fff; }
   .catalog-slide__learnmore:hover {
+    color: #fff;
     background-color: #2d2870; }
 
 @media screen and (max-width: 960px) {
@@ -10336,7 +10409,6 @@ iframe.uk-cover {
   cursor: pointer;
   transition: background-color 0.25s; }
   .learnmore:hover {
-    color: #fff;
     transition: background-color 0.25s;
     text-decoration: none; }
 
@@ -10381,38 +10453,6 @@ iframe.uk-cover {
   .about__learnmore:hover {
     -webkit-animation: hovering 2s forwards;
             animation: hovering 2s forwards; }
-
-@-webkit-keyframes hovering {
-  0% {
-    border-top-color: #3c3695; }
-  25% {
-    border-top-color: #3c3695;
-    border-right-color: #3c3695; }
-  50% {
-    border-top-color: #3c3695;
-    border-right-color: #3c3695;
-    border-bottom-color: #3c3695; }
-  100% {
-    border-top-color: #3c3695;
-    border-right-color: #3c3695;
-    border-bottom-color: #3c3695;
-    border-left-color: #3c3695; } }
-
-@keyframes hovering {
-  0% {
-    border-top-color: #3c3695; }
-  25% {
-    border-top-color: #3c3695;
-    border-right-color: #3c3695; }
-  50% {
-    border-top-color: #3c3695;
-    border-right-color: #3c3695;
-    border-bottom-color: #3c3695; }
-  100% {
-    border-top-color: #3c3695;
-    border-right-color: #3c3695;
-    border-bottom-color: #3c3695;
-    border-left-color: #3c3695; } }
 
 @media screen and (max-width: 960px) {
   .about__leftside {
@@ -10627,46 +10667,6 @@ iframe.uk-cover {
 @media screen and (max-width: 640px) {
   .search-bar {
     right: -380px; } }
-
-@-webkit-keyframes slide-in {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateX(-360px);
-            transform: translateX(-360px);
-    opacity: 1; } }
-
-@keyframes slide-in {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateX(-360px);
-            transform: translateX(-360px);
-    opacity: 1; } }
-
-@-webkit-keyframes slide-out {
-  0% {
-    -webkit-transform: translateX(-360px);
-            transform: translateX(-360px);
-    opacity: 1; }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 0; } }
-
-@keyframes slide-out {
-  0% {
-    -webkit-transform: translateX(-360px);
-            transform: translateX(-360px);
-    opacity: 1; }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 0; } }
 
 .catalog-full {
   width: 100%;

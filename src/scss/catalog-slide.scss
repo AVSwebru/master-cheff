@@ -31,14 +31,14 @@
 
 .catalog-slide__title {
     margin-bottom: 5px;
-    color: #000000;
+    color: #000;
     font-size: 36px;
     text-transform: uppercase;
 }
 
 .catalog-slide__subtitle {
     margin-bottom: 25px;
-    color: #666666;
+    color: #666;
     font-family: Lato;
     font-size: 18px;
     font-weight: 400;
@@ -46,8 +46,9 @@
 
 .catalog-slide__learnmore {
     background-color: $theme-color;
-    color: #ffffff;
+    color: #fff;
     &:hover {
+        color: #fff;
         background-color: darken($theme-color, 10%);
     }
 }

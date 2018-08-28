@@ -48,26 +48,6 @@
     }
 }
 
-@keyframes hovering {
-    0% {
-        border-top-color: $theme-color;
-    }
-    25% {
-        border-top-color: $theme-color;
-        border-right-color: $theme-color;
-    }
-    50% {
-        border-top-color: $theme-color;
-        border-right-color: $theme-color;
-        border-bottom-color: $theme-color;
-    }
-    100% {
-        border-top-color: $theme-color;
-        border-right-color: $theme-color;
-        border-bottom-color: $theme-color;
-        border-left-color: $theme-color;
-    }
-}
 
 @media screen and (max-width: $breakpoint-medium) {
     .about__leftside {
