@@ -1,8 +1,8 @@
-export default function(catalogElements) {
+export default (catalogElements) => {
    
-    const {catalog, controlBar, catalogOpenBtn, catalogCloseBtn} = catalogElements;
+    const {catalog, header, catalogOpenBtn, catalogCloseBtn} = catalogElements;
 
-    catalog.style.top = controlBar.getBoundingClientRect().height + 'px';
+    catalog.style.top = header.getBoundingClientRect().height + 'px';
   
     catalogOpenBtn.addEventListener('click', () => {
         catalog.hidden = (catalog.hidden === true) ? false : true;   
@@ -12,4 +12,4 @@ export default function(catalogElements) {
         catalog.hidden = true;          
     });
 
-}
+};

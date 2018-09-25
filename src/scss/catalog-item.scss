@@ -1,0 +1,37 @@
+.catalog-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    &:hover {
+        // .catalog-item__title {
+        //     color: #fff;
+        //     transform: skew(35deg) translateX(20px);
+        //     transition: transform 0.25s;
+        // }
+        // .catalog-item__title-text {
+        //     transform: skew(35deg) translateX(20px);
+        //     transition: transform 0.25s;
+        // }
+    }
+}
+
+.catalog-item__title {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    padding: 9px;
+    background-color: rgba(60, 54, 149, 0.9);
+    color: #fff;
+    transform: skew(-35deg);
+    transition: transform 0.25s;
+}
+
+.catalog-item__title-text {
+    display: inline-block;
+    transform: skew(35deg);
+    transition: transform 0.25s;
+}

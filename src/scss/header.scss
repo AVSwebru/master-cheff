@@ -1,8 +1,8 @@
-.header {
+.header__top {
     background-color: $theme-color;
 }
 
-.header__inner {
+.header__top-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;

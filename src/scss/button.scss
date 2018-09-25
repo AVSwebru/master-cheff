@@ -1,4 +1,4 @@
-.learnmore {
+.button {
     padding: 15px 40px;
     border-radius: 12px;
     border: none;
@@ -8,6 +8,15 @@
     line-height: 1;
     cursor: pointer;
     transition: background-color 0.25s;
+    white-space: nowrap;
+    &_type_dark {
+        background-color: $theme-color;
+        color: #fff;
+        &:hover {
+            color: #fff;
+            background-color: darken($theme-color, 10%);
+        }
+    }
     &:hover {
         transition: background-color 0.25s;
         text-decoration: none;

@@ -1,0 +1,19 @@
+.inner-page {
+    padding: 0 0 100px;
+}
+
+.inner-page__heading {
+    padding: 110px 0 0;
+    background: #7ea4bc url('../img/inner-page-bg.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.inner-page__breadcrumb {
+    margin: 30px 0 35px;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .inner-page__heading {
+      display: none;
+    }
+}

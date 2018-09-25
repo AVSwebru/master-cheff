@@ -1,10 +1,13 @@
 .catalog-full {
-    width: 100%;
+    width: 1180px;
+    max-width: 1180px;
     box-sizing: border-box;
     padding: 40px 30px;
     background-color: #eaefea;
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: 50%;
+    z-index: 15;
+    transform: translateX(-50%);
     & > ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, 250px);
@@ -22,6 +25,10 @@
     }
     a {
         color: #404040;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -30,6 +37,12 @@
     top: 10px;
     right: 10px;
     z-index: 1;
+    transition: transform 0.25s;
+    &:hover {
+        transform: rotate(180deg);
+        transform-origin: 50% 50%;
+        transition: transform 0.5s;
+    }
 }
 
 a.catalog-full__heading {
@@ -65,5 +78,17 @@ a.catalog-full__heading {
     &_japan::before {
         background: url('../img/japan.svg') 50% 50% no-repeat;
         background-size: cover;
+    }
+}
+
+@media screen and (max-width: $breakpoint-large) {
+    .catalog-full {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .catalog-full {
+        position: absolute;
     }
 }

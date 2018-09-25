@@ -1,0 +1,11 @@
+.page-title {
+    color: #1a1a1a;
+    font-size: 36px;
+    font-weight: 400
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .page-title {
+        font-size: 30px;
+    }
+}

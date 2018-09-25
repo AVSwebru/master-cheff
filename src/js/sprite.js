@@ -1,6 +1,6 @@
 (function(window, document) {
     'use strict';
-    const PATH = 'custom/master_cheff/img/sprite.svg';
+    const PATH = '../img/sprite.svg';
 	
     var revision = 1;
 

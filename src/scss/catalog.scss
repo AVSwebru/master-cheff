@@ -1,0 +1,27 @@
+.catalog__page-title {
+    margin-bottom: 40px;
+}
+
+.catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 270px);
+    grid-auto-rows: 210px;
+    grid-gap: 30px;
+    & > div:nth-child(odd) > .catalog-item {
+        .catalog-item__title {
+            padding-left: 32px;
+            margin-left: -16px;
+        }
+    }
+    & > div:nth-child(even) > .catalog-item {
+        .catalog-item__title {
+            right: 0;
+            margin-right: -30px;
+            margin-left: 30px;
+            padding-left: 15px;
+        }
+    }
+    & > div:nth-child(even) .catalog-item:hover .catalog-item__title {
+        // transform: skew(35deg) translateX(-20px);
+    }
+}

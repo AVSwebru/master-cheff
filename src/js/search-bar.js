@@ -1,6 +1,4 @@
-export default function(searchElements) {
-
-    const {searchToggler, searchBar, searchClose} = searchElements;
+export default (searchToggler, searchBar, searchClose) => {
 
     searchBar.opened = false;
 
@@ -24,5 +22,5 @@ export default function(searchElements) {
         searchBar.classList.add('search-bar_slide-in');
     }
     
-}
+};
 
