@@ -54,3 +54,5 @@ const ordering = document.querySelector('.js-ordering');
 if (submitCartBtn && cart && ordering) {
     purchase(submitCartBtn, cart, ordering);
 }
+
+

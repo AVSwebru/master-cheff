@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Master Sheff</title>
     <link href="../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="magnifier.css">
 </head>
 <body class="page">
     <header class="header" data-uk-sticky> 
@@ -141,8 +142,8 @@
         <button class="catalog-full__close-btn uk-close-large js-catalog-close" type="button" data-uk-close></button>
     </div> 
     <main class="product inner-page">
-        <div class="uk-container">
-            <div class="inner-page__heading"></div>
+        <div class="inner-page__heading"></div>
+            <div class="uk-container">
                 <div class="product__content">
                     <ul class="inner-page__breadcrumb uk-breadcrumb">
                         <li><a href="#">Главная</a></li>
@@ -164,14 +165,14 @@
                             <div class="product__price">
                                 790.20 ₽
                             </div>
-                            <form class="product-calc">
-                                <div class="product-calc__counter counter">
+                            <form class="product__product-calc">
+                                <div class="product__counter counter">
                                     <button class="counter__btn js-counter-minus" type="button">-</button>
                                     <input class="counter__input js-counter-input" type="text" value="1">
                                     <button class="counter__btn js-counter-plus" type="button">+</button>
                                 </div>
-                                <button class="product-calc__submit product-calc__submit_status_default" type="submit">
-                                    <span class="product-calc__text">В корзину</span>
+                                <button class="product-btn product-btn_status_default" type="submit">
+                                    <span class="product-btn__text">В корзину</span>
                                 </button>
                             </form>
                         </div>
@@ -198,14 +199,44 @@
                                         <div class="product-item__price">
                                             428.80 ₽ 
                                         </div>
-                                        <form class="product-item__product-calc product-calc">
-                                            <div class="product-calc__counter counter">
+                                        <form class="product-item__product-calc">
+                                            <div class="product-item__counter counter">
                                                 <button class="counter__btn js-counter-minus" type="button">-</button>
                                                 <input class="counter__input js-counter-input" type="text" value="1">
                                                 <button class="counter__btn js-counter-plus" type="button">+</button>
                                             </div>
-                                            <button class="product-calc__submit product-calc__submit_status_default" type="submit">
-                                                <span class="product-calc__text">В корзину</span>
+                                            <button class="product-btn product-btn_status_default" type="submit">
+                                                <span class="product-btn__text">В корзину</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item" style="position: relative;">
+                                <a class="product-item__image magnifier-thumb-wrapper" href="http://en.wikipedia.org/wiki/File:Starry_Night_Over_the_Rhone.jpg">
+                                    <img id="thumb" src="img/product-item.jpg?c4cdcf9a8055988921d4a136b5536f50" alt="">
+                                    <div class="product-item__new">
+                                        NEW
+                                    </div>
+                                </a>
+                                <div class="product-item__info">
+                                    <div class="product-item__info-leftside">
+                                        <a class="product-item__title" href="product.html">Блюдо овальное «Desert Fusion», 40 см </a>
+                                        <div class="product-item__vendor-code">Артикул: 81223063</div>
+                                        <div class="product-item__producer">Производитель: <a href="#">RAK (Арабские Эмираты)</a></div>
+                                    </div>
+                                    <div class="product-item__info-rightside">
+                                        <div class="product-item__price">
+                                            428.80 ₽ 
+                                        </div>
+                                        <form class="product-item__product-calc">
+                                            <div class="product-item__counter counter">
+                                                <button class="counter__btn js-counter-minus" type="button">-</button>
+                                                <input class="counter__input js-counter-input" type="text" value="1">
+                                                <button class="counter__btn js-counter-plus" type="button">+</button>
+                                            </div>
+                                            <button class="product-btn product-btn_status_default" type="submit">
+                                                <span class="product-btn__text">В корзину</span>
                                             </button>
                                         </form>
                                     </div>
@@ -228,44 +259,14 @@
                                         <div class="product-item__price">
                                             428.80 ₽ 
                                         </div>
-                                        <form class="product-item__product-calc product-calc">
-                                            <div class="product-calc__counter counter">
+                                        <form class="product-item__product-calc">
+                                            <div class="product-item__counter counter">
                                                 <button class="counter__btn js-counter-minus" type="button">-</button>
                                                 <input class="counter__input js-counter-input" type="text" value="1">
                                                 <button class="counter__btn js-counter-plus" type="button">+</button>
                                             </div>
-                                            <button class="product-calc__submit product-calc__submit_status_default" type="submit">
-                                                <span class="product-calc__text">В корзину</span>
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item">
-                                <a class="product-item__image" href="product.html">
-                                    <img src="img/product-item.jpg?c4cdcf9a8055988921d4a136b5536f50" alt="">
-                                    <div class="product-item__new">
-                                        NEW
-                                    </div>
-                                </a>
-                                <div class="product-item__info">
-                                    <div class="product-item__info-leftside">
-                                        <a class="product-item__title" href="product.html">Блюдо овальное «Desert Fusion», 40 см </a>
-                                        <div class="product-item__vendor-code">Артикул: 81223063</div>
-                                        <div class="product-item__producer">Производитель: <a href="#">RAK (Арабские Эмираты)</a></div>
-                                    </div>
-                                    <div class="product-item__info-rightside">
-                                        <div class="product-item__price">
-                                            428.80 ₽ 
-                                        </div>
-                                        <form class="product-item__product-calc product-calc">
-                                            <div class="product-calc__counter counter">
-                                                <button class="counter__btn js-counter-minus" type="button">-</button>
-                                                <input class="counter__input js-counter-input" type="text" value="1">
-                                                <button class="counter__btn js-counter-plus" type="button">+</button>
-                                            </div>
-                                            <button class="product-calc__submit product-calc__submit_status_default" type="submit">
-                                                <span class="product-calc__text">В корзину</span>
+                                            <button class="product-btn product-btn_status_default" type="submit">
+                                                <span class="product-btn__text">В корзину</span>
                                             </button>
                                         </form>
                                     </div>

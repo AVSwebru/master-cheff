@@ -143,7 +143,7 @@
     <main class="purchase inner-page">
         <div class="inner-page__heading"></div>
         <div class="uk-container">
-            <form class="cart" hidden>
+            <form class="cart js-cart">
                 <div class="cart__heading">
                     <div class="page-title">Корзина</div>
                     <a class="cart__to-shop" href="#">Вернуться к покупкам</a>
@@ -267,13 +267,13 @@
                                
                             </div>
                             <div class="cart-info__submit-area">
-                                <button class="cart-info__confirm-btn button button_type_dark" type="button">Оформить заказ</button>
+                                <button class="cart-info__confirm-btn button button_type_dark js-submit-cart" type="button">Оформить заказ</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </form>
-            <form class="ordering">
+            <form class="ordering js-ordering" hidden>
                 <div class="ordering__heading">
                     <div class="page-title">Оформление заказа</div>
                     <a class="ordering__to-cart" href="#">Вернуться в корзину</a>
@@ -281,29 +281,66 @@
                 <div class="ordering__grid">
                     <div>
                         <section class="ordering__contacts">
-                            <h2 class="ordering__contacts-title">Контактные данные</h2>
-                            <div class="ordering__row">
-                                <label for="name">Имя</label>
-                                <input class="uk-input" name="name" id="name" type="text">
+                            <h2 class="ordering__section-title ordering__contacts-title">Контактные данные</h2>
+                            <div class="ordering__contacts-inner">
+                                <div class="ordering__row">
+                                    <label class="ordering__label" for="name">Имя</label>
+                                    <input class="uk-input" name="name" id="name" type="text">
+                                </div>
+                                <div class="ordering__row">
+                                    <label class="ordering__label" for="tel">Номер телефона</label>
+                                    <input class="uk-input" name="tel" id="tel" type="tel" placeholder="+7 ___-___-__-__">
+                                </div>
+                                <div class="ordering__row">
+                                    <label class="ordering__label" for="email">E-mail</label>
+                                    <input class="uk-input" name="email" id="email" type="email">
+                                </div> 
                             </div>
-                            <div class="ordering__row">
-                                <label for="tel">Номер телефона</label>
-                                <input class="uk-input" name="tel" id="tel" type="tel" placeholder="+7 ___-___-__-__">
-                            </div>
-                            <div class="ordering__row">
-                                <label for="email">E-mail</label>
-                                <input class="uk-input" name="email" id="email" type="email">
-                            </div> 
                         </section>
-                        <section class="ordering__recieving-method">
-                            <h2 class="ordering__contacts-title">Cпособ получения заказа</h2>
-                            
+                        <section class="ordering__delivery">
+                            <h2 class="ordering__section-title">Cпособ получения заказа</h2>
+                            <div class="ordering__variants">
+                                <div class="ordering__variants-item">
+                                    <input type="radio" name="delivery" id="delivery-1">
+                                    <label for="delivery-1">Доставка транспортной компанией</label>
+                                </div>
+                                <div class="ordering__variants-item">
+                                    <input type="radio" name="delivery" id="delivery-2">
+                                    <label class="ordering__variants-item" for="delivery-2">Курьер</label>
+                                </div>
+                                <div class="ordering__variants-item">
+                                    <input type="radio" name="delivery" id="delivery-3">
+                                    <label class="ordering__variants-item" for="delivery-3">Самовывоз (Воронеж)</label>
+                                </div>
+                            </div>
+                            <label class="ordering__label" for="address">Адрес</label>
+                            <input class="uk-input" name="address" id="address" type="text">
+                            <div class="ordering__delivery-text">
+                                Сроки и стоимость доставки уточняйте у менеджера по тел.: +7 (920) 422-81-67
+                            </div>
+                        </section>
+                        <section class="ordering__payment">
+                            <h2 class="ordering__section-title">Cпособ оплаты</h2>
+                            <div class="ordering__variants">
+                                <div class="ordering__variants-item">
+                                    <input type="radio" name="payment" id="payment-1">
+                                    <label for="payment-1">Наличный расчёт</label>
+                                </div>
+                                <div class="ordering__variants-item">
+                                    <input type="radio" name="payment" id="payment-2">
+                                    <label class="ordering__variants-item" for="payment-2">Безналичный расчёт</label>
+                                </div>
+                            </div>
+                            <div class="ordering__comments">
+                                <label class="ordering__label" for="comments">Комментарии к заказу:</label>
+                                <textarea class="uk-textarea" id="comments"></textarea>
+                            </div>
                         </section>
                     </div>
                     <div>
                         <div class="cart-info">
                             <div class="cart-info__text-area">
-                                <div class="cart-info__heading">Итого:</div>
+                                <div class="cart-info__heading">Ваш заказ:</div>
                                 <div class="cart-info__text">
                                     <span class="cart-info__count">
                                         4 товара на сумму
@@ -315,7 +352,7 @@
                                 
                             </div>
                             <div class="cart-info__submit-area">
-                                <button class="cart-info__confirm-btn button button_type_dark" type="button">Оформить заказ</button>
+                                <button class="cart-info__confirm-btn button button_type_dark" type="button">Подтвердить заказ</button>
                             </div>
                         </div>
                     </div>
