@@ -12,13 +12,39 @@
 }
 
 .sort-bar__btn {
+    margin-right: 20px;
     color: #494949;
     font-size: 14px;
     font-weight: 400;
+    text-decoration: none;
+    text-transform: lowercase;
     background: none;
     border: none;
     cursor: pointer;
-    &_active {
+    &:hover {
+        color: #494949;
+        text-decoration: none;
+    }
+    &.active {
         font-weight: 700;
+    }
+}
+
+.sort-bar__control {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .sort-bar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .sort-bar__btn {
+        padding: 10px 0;
+    }
+    .sort-bar__text {
+        display: none;
     }
 }

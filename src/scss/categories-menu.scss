@@ -1,10 +1,7 @@
 .categories-menu {
     width: 290px;
-    position: absolute;
-    top: -90px;
-    left: 0;
-    z-index: 10;
-    transform: translateX(-100%);
+    position: relative;
+    top: -60px;
     box-shadow: 3px 4px 11px rgba(13,6,114,.43);
     background-color: #ebeeea;
     ul {
@@ -21,6 +18,7 @@
 .categories-menu__topmenu > li > a {
     padding: 20px 24px 9px;
     border-left: 5px solid transparent;
+    transition: border-left 0.25s;
     position: relative;
     color: #000;
     font-size: 16px;
@@ -33,6 +31,7 @@
 
 .categories-menu__topmenu > .uk-open > a {
     border-left: 5px solid $theme-color;
+    transition: border-left 0.25s;
     color: $theme-color;
 }
 

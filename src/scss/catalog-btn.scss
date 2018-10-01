@@ -13,10 +13,10 @@
 }
 
 .catalog-btn__icon {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-    fill: #000000;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    fill: $theme-color;
 }
 
 @media screen and (max-width: $breakpoint-medium) {

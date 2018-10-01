@@ -4,10 +4,10 @@
     box-sizing: border-box;
     padding: 40px 30px;
     background-color: #eaefea;
-    position: fixed;
-    left: 50%;
+    position: absolute;
+    left: 0;
+    top: 100%;
     z-index: 15;
-    transform: translateX(-50%);
     & > ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, 250px);
@@ -84,11 +84,5 @@ a.catalog-full__heading {
 @media screen and (max-width: $breakpoint-large) {
     .catalog-full {
         width: 100%;
-    }
-}
-
-@media screen and (max-width: $breakpoint-small) {
-    .catalog-full {
-        position: absolute;
     }
 }

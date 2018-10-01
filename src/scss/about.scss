@@ -43,8 +43,10 @@
     color: #525252;
     background-color: #fff;
     border: 3px solid transparent;
+    transition: border-color 0.25s;
     &:hover {
-        animation: hovering 2s forwards;
+        border-color: $theme-color;
+        transition: border-color 0.25s;
     }
 }
 

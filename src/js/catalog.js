@@ -1,11 +1,16 @@
 export default (catalogElements) => {
    
-    const {catalog, header, catalogOpenBtn, catalogCloseBtn} = catalogElements;
+    const {catalog, header, catalogBar, catalogOpenBtn, catalogCloseBtn} = catalogElements;
 
-    catalog.style.top = header.getBoundingClientRect().height + 'px';
+    catalog.style.top = header.getBoundingClientRect().height + catalogBar.getBoundingClientRect() + 'px';
   
     catalogOpenBtn.addEventListener('click', () => {
-        catalog.hidden = (catalog.hidden === true) ? false : true;   
+        if (catalog.hidden === true) {
+            catalog.hidden = false; 
+            catalog.classList.add('uk-animation-slide-top');
+        } else {
+            catalog.hidden = true;
+        } 
     });
 
     catalogCloseBtn.addEventListener('click', () => {

@@ -1,5 +1,4 @@
 import './uikit';
-import './sprite';
 
 //search-bar toggler
 import searchBarToggler from './search-bar';
@@ -19,6 +18,7 @@ import catalogToggler from './catalog';
 const catalogElements = {
     catalog: document.querySelector('.catalog-full'),
     header: document.querySelector('.header'),
+    catalogBar: document.querySelector('.control-bar'),
     catalogOpenBtn: document.querySelector('.js-catalog-btn'),
     catalogCloseBtn: document.querySelector('.js-catalog-close')
 };

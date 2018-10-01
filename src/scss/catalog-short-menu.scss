@@ -12,6 +12,7 @@
     }
     a {
         color: #4f4f4f;
+        font-size: 14px;
         font-weight: 400;
         line-height: 1;
         white-space: nowrap;
@@ -19,18 +20,18 @@
         text-decoration: none;
         &::before {
             content: '';
-            display: none;
-            width: 100%;
+            width: 0;
             height: 2px;
-            position: absolute;
-            bottom: -3px;
-            left: 0;
             background-color: #4f4f4f;
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            transition: width .25s;
         }
         &:hover {
-            text-decoration: none;
             &::before {
-                display: block;
+                width: 100%;
+                transition: width .25s;
             }
         }
     }
