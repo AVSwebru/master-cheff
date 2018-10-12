@@ -1,20 +1,22 @@
 import './uikit';
+import catalogToggler from './catalog';
+import menuToggler from './menu';
+import searchBarToggler from './search-bar';
+import counter from './counter';
+import purchase from './purchase';
 
 //search-bar toggler
-import searchBarToggler from './search-bar';
-
 const searchToggler = document.querySelector('.js-search-btn');
 const searchBar = document.querySelector('.js-search-bar');
 const searchClose = document.querySelector('.js-search-close');
+const searchInput = document.querySelector('.js-search-input');
 
-if (searchToggler && searchBar && searchClose) {
-    searchBarToggler(searchToggler, searchBar, searchClose);
+if (searchToggler && searchBar && searchClose && searchInput) {
+    searchBarToggler(searchToggler, searchBar, searchClose, searchInput);
 }
 
 
 //catalog toggler
-import catalogToggler from './catalog';
-
 const catalogElements = {
     catalog: document.querySelector('.catalog-full'),
     header: document.querySelector('.header'),
@@ -27,8 +29,6 @@ catalogToggler(catalogElements);
 
 
 //menu toggler
-import menuToggler from './menu';
-
 const menuBtn = document.querySelector('.js-menu-btn');
 const menu = document.querySelector('.nav');
 
@@ -36,17 +36,14 @@ menuToggler(menuBtn, menu);
 
 
 //counters
-import counter from './counter';
-
 const counterMinusBtn = document.querySelectorAll('.js-counter-minus');
 const counterPlusBtn = document.querySelectorAll('.js-counter-plus');
 const counterInput = document.querySelectorAll('.js-counter-input');
 
 counter(counterMinusBtn, counterPlusBtn, counterInput);
 
-//purchase page
-import purchase from './purchase';
 
+//purchase page
 const submitCartBtn = document.querySelector('.js-submit-cart');
 const cart = document.querySelector('.js-cart');
 const ordering = document.querySelector('.js-ordering');

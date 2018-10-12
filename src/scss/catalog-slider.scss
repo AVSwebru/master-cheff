@@ -2,6 +2,11 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    &:hover {
+        .catalog-slider__nav-icon {
+            fill: darken(#ebeeea, 10%);
+        }
+    }
 }
 
 .catalog-slider__prev {

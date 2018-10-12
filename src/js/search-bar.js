@@ -1,4 +1,4 @@
-export default (searchToggler, searchBar, searchClose) => {
+export default (searchToggler, searchBar, searchClose, searchInput) => {
 
     searchBar.opened = false;
 
@@ -20,6 +20,7 @@ export default (searchToggler, searchBar, searchClose) => {
     function showSearchBar(searchBar) {
         searchBar.classList.remove('search-bar_slide-out');
         searchBar.classList.add('search-bar_slide-in');
+        searchInput.focus();
     }
     
 };

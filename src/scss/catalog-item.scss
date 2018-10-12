@@ -6,15 +6,10 @@
     top: 0;
     left: 0;
     &:hover {
-        // .catalog-item__title {
-        //     color: #fff;
-        //     transform: skew(35deg) translateX(20px);
-        //     transition: transform 0.25s;
-        // }
-        // .catalog-item__title-text {
-        //     transform: skew(35deg) translateX(20px);
-        //     transition: transform 0.25s;
-        // }
+        .catalog-item__title {
+            background-color: rgba(60, 54, 149, 1);
+            transition: background-color 0.25s;
+        }
     }
 }
 
@@ -25,6 +20,7 @@
     left: 0;
     padding: 9px;
     background-color: rgba(60, 54, 149, 0.9);
+    transition: background-color 0.25s;
     color: #fff;
     transform: skew(-35deg);
     transition: transform 0.25s;
@@ -34,4 +30,9 @@
     display: inline-block;
     transform: skew(35deg);
     transition: transform 0.25s;
+}
+
+.catalog-item__image {
+    left: 0;
+    top: 0;
 }

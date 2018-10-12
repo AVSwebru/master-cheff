@@ -22,9 +22,3 @@
 .header__header-tel {
     margin-left: 25px;
 }
-
-@media screen and (max-width: $breakpoint-medium) {
-    .header__rightside {
-        justify-content: right;
-    }
-}	
