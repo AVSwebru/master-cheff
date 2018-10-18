@@ -1,0 +1,24 @@
+.brand-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.brand-item__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.brand-item__title {
+    display: block;
+    text-align: center;
+}
