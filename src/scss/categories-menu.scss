@@ -1,5 +1,6 @@
 .categories-menu {
     width: 290px;
+    padding: 10px 0 15px;
     position: relative;
     top: -60px;
     box-shadow: 3px 4px 11px rgba(13,6,114,.43);
@@ -16,7 +17,7 @@
 }
 
 .categories-menu__topmenu > li > a {
-    padding: 20px 24px 9px;
+    padding: 10px 24px;
     border-left: 5px solid transparent;
     transition: border-left 0.25s;
     position: relative;
@@ -37,7 +38,7 @@
 
 
 .categories-menu__innermenu a {
-    padding: 15px 50px 0 40px;
+    padding: 10px 50px 0 40px;
     margin-bottom: 15px;
     color: #000;
     font-size: 14px;

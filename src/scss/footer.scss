@@ -9,16 +9,41 @@
 
 .footer__bottom {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
-    color: #fff;
-    font-size: 12px;
 }
 
 .footer__bottom-rightside {
     text-align: right;
 }
 
+.footer__policy {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer__policy:hover {
+    color: #fff;
+}
+
+.footer__copyright {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer__address {
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer__devs {
+    display: block;
+}
 
 @media screen and (max-width: $breakpoint-small) {
     .footer {
@@ -33,6 +58,7 @@
     }
     .footer__bottom {
        flex-direction: column;
+       align-items: flex-start;
     }
     .footer__bottom-leftside {
         margin-bottom: 20px;
@@ -40,5 +66,5 @@
     .footer__bottom-rightside {
         text-align: left;
     }
-    
-}	
+
+}

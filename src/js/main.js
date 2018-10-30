@@ -47,9 +47,9 @@ counter(counterMinusBtn, counterPlusBtn, counterInput);
 const submitCartBtn = document.querySelector('.js-submit-cart');
 const cart = document.querySelector('.js-cart');
 const ordering = document.querySelector('.js-ordering');
+const orderingInfo = document.querySelector('.js-ordering-info');
+const btnToCart = document.querySelector('.js-to-cart');
 
-if (submitCartBtn && cart && ordering) {
-    purchase(submitCartBtn, cart, ordering);
+if (submitCartBtn && cart && ordering && orderingInfo && btnToCart) {
+    purchase(submitCartBtn, cart, ordering, orderingInfo, btnToCart);
 }
-
-

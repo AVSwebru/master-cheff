@@ -9,14 +9,15 @@
     background-color: #fff;
     position: absolute;
     bottom: -60px;
-    right: -360px;
-    z-index: 5;
+    right: 0;
+    transform: translateX(360px);
+    z-index: 20;
     opacity: 0;
     &_slide-in {
         animation: slide-in 0.25s ease-out both;
     }
     &_slide-out {
-        animation: slide-out 0.25s ease-in both;
+        animation: slide-out 0.25s ease-out both;
     }
 }
 
@@ -26,6 +27,6 @@
 
 @media screen and (max-width: $breakpoint-small) {
     .search-bar {
-        right: -380px;
+        transform: translateX(380px);
     }
 }

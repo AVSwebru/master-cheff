@@ -29,25 +29,13 @@ $internal-accordion-close-image: "data:image/svg+xml,%3Csvg width='20' height='2
     }
 }
 
+$accordion-item-margin-top: 0;
+
 .uk-accordion-title::after {
     float: none;
     position: absolute;
     right: 9px;
 }
-
-// @mixin hook-accordion-title() {
-//     &::after {
-//         content: "";
-//         width: 1.4em;
-//         height: 1.4em;
-//         position: absolute;
-//         right: 8px;
-//         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' stroke='%23000' stroke-width='1.03' d='M16 7l-6 6-6-6'/%3E%3C/svg%3E");
-//         background-repeat: no-repeat;
-//         background-position: 50% 50%;
-//     }
-// }
-
 
 // 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";

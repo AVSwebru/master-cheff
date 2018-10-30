@@ -136,15 +136,16 @@
     }
     form.product-item__product-calc {
         width: auto;
+        align-items: center;
+        flex-wrap: wrap;
     }
     div.product-item__counter {
         display: none;
     }
     .product-item__product-calc .error {
-        display: none;
+        display: none !important;
     }
 }
-
 
 @media screen and (max-width: $breakpoint-small) {
     .product-item__image {

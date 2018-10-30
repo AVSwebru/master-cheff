@@ -1,3 +1,7 @@
+.header {
+    z-index: 1000 !important;  
+}
+
 .header__top {
     background-color: $theme-color;
 }
