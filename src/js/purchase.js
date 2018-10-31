@@ -7,7 +7,7 @@ export default (submitCartBtn, cart, ordering, orderingInfo, btnToCart) => {
       behavior: "smooth"
     })
     setTimeout(() => {
-      orderingInfo.setAttribute('data-uk-sticky', 'offset: 70; bottom: #footer; media: @l');
+      orderingInfo.setAttribute('data-uk-sticky', 'offset: 70; bottom: #main; media: @l');
     }, 0);
   });
 
