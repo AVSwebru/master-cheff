@@ -27,6 +27,8 @@
 @media screen and (max-width: $breakpoint-medium) {
     .footer-nav  {
         padding-left: 10px;
+        li {
+          margin-bottom: 5px;
+        }
     }
-}	
-
+}

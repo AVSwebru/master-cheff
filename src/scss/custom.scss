@@ -4,8 +4,16 @@
 $global-font-family: 'Lato', sans-serif;
 $base-body-font-weight: 400;
 $container-max-width: 1180px;
+$container-xsmall-max-width: 640px;
+$container-small-max-width: 960px;
+$container-large-max-width: 1600px;
 $breadcrumb-divider-margin-horizontal: 8px;
-
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;  
+}
 $global-link-color: $theme-color;
 $base-link-text-decoration: underline;
 $global-link-hover-color: $theme-color;
@@ -40,12 +48,3 @@ $accordion-item-margin-top: 0;
 // 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";
 @import 'variables';
-
-button, a {
-    &:focus {
-        outline: 1px solid #817bf9 !important;
-    }
-    &:active {
-        outline: none !important;
-    }
-}
