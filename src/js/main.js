@@ -4,6 +4,7 @@ import menuToggler from './menu';
 import searchBarToggler from './search-bar';
 import counter from './counter';
 import purchase from './purchase';
+import './cartMove';
 
 //search-bar toggler
 const searchToggler = document.querySelector('.js-search-btn');

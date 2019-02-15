@@ -10305,6 +10305,14 @@ iframe.uk-cover {
   .cart-btn__text > span {
     display: block; }
 
+@media screen and (max-width: 960px) {
+  .cart-btn {
+    margin-right: 10px; }
+  .cart-btn__icon {
+    fill: #fff; }
+  .cart-btn__text {
+    display: none; } }
+
 @media screen and (max-width: 640px) {
   .cart-btn__text {
     display: none; } }
@@ -11017,6 +11025,8 @@ a.catalog-full__heading {
   display: flex;
   padding: 20px 0;
   border-bottom: 2px solid #ebeeea; }
+  .product-item .error {
+    margin-top: 10px; }
 
 .product-item__info {
   display: flex;
@@ -11041,7 +11051,9 @@ a.catalog-full__heading {
   margin-right: 40px; }
 
 .product-item__info-rightside {
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
 
 .product-item__title {
   display: block;
@@ -11099,12 +11111,7 @@ a.catalog-full__heading {
 
 .product-item__product-calc {
   display: flex;
-  align-items: flex-start;
-  position: relative; }
-  .product-item__product-calc .error {
-    position: absolute;
-    bottom: 0;
-    right: 0; }
+  align-items: flex-start; }
 
 .product-item__counter {
   margin-right: 20px; }
@@ -11122,8 +11129,6 @@ a.catalog-full__heading {
     width: auto;
     margin-right: 0;
     margin-bottom: 10px; }
-  .product-item__info-rightside {
-    align-items: center; }
   .product-item__text {
     margin-bottom: 10px; }
   form.product-item__product-calc {
@@ -11131,9 +11136,7 @@ a.catalog-full__heading {
     align-items: center;
     flex-wrap: wrap; }
   div.product-item__counter {
-    display: none; }
-  .product-item__product-calc .error {
-    display: none !important; } }
+    display: none; } }
 
 @media screen and (max-width: 640px) {
   .product-item__image {
@@ -11772,13 +11775,13 @@ a.catalog-full__heading {
     border-bottom: 2px solid #ebeeea; }
 
 .info-row__pic {
-  flex-basis: 45px;
+  min-width: 45px;
   margin-right: 20px;
   -webkit-transform: translateY(33%);
           transform: translateY(33%); }
 
 .info-row__title {
-  flex-basis: 190px;
+  min-width: 190px;
   margin-right: 34px;
   color: #494949;
   font-size: 16px;
@@ -11786,10 +11789,19 @@ a.catalog-full__heading {
   line-height: 1; }
 
 .info-row__desc {
-  flex-basis: 300px;
-  flex-grow: 1;
+  min-width: 300px;
   color: #494949;
   font-size: 15px; }
+
+@media (max-width: 640px) {
+  .info-row {
+    flex-direction: column; }
+  .info-row__pic {
+    -webkit-transform: none;
+            transform: none;
+    margin-bottom: 10px; }
+  .info-row__title {
+    margin-bottom: 10px; } }
 
 .about {
   display: flex;

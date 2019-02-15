@@ -32,6 +32,18 @@
     }
 }
 
+@media screen and (max-width: $breakpoint-medium) {
+    .cart-btn {
+        margin-right: 10px;
+    }
+    .cart-btn__icon {
+        fill: #fff;
+    }
+    .cart-btn__text {
+        display: none;
+    }
+}
+
 @media screen and (max-width: $breakpoint-small) {
     .cart-btn__text {
         display: none;

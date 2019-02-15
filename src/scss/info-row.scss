@@ -9,13 +9,13 @@
 }
 
 .info-row__pic {
-  flex-basis: 45px;
+  min-width: 45px;
   margin-right: 20px;
   transform: translateY(33%);
 }
 
 .info-row__title {
-  flex-basis: 190px;
+  min-width: 190px;
   margin-right: 34px;
   color: #494949;
   font-size: 16px;
@@ -24,8 +24,20 @@
 }
 
 .info-row__desc {
-  flex-basis: 300px;
-  flex-grow: 1;
+  min-width: 300px;
   color: #494949;
   font-size: 15px;
+}
+
+@media (max-width: $breakpoint-small) {
+  .info-row {
+    flex-direction: column;
+  }
+  .info-row__pic {
+    transform: none;
+    margin-bottom: 10px;
+  }
+  .info-row__title {
+    margin-bottom: 10px;
+  }
 }
