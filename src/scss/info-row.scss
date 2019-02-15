@@ -1,0 +1,31 @@
+.info-row {
+  display: flex;
+  align-items: baseline;
+  padding: 25px 0 35px;
+  border-top: 2px solid #ebeeea;
+  &:last-of-type {
+    border-bottom: 2px solid #ebeeea;
+  }
+}
+
+.info-row__pic {
+  flex-basis: 45px;
+  margin-right: 20px;
+  transform: translateY(33%);
+}
+
+.info-row__title {
+  flex-basis: 190px;
+  margin-right: 34px;
+  color: #494949;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.info-row__desc {
+  flex-basis: 300px;
+  flex-grow: 1;
+  color: #494949;
+  font-size: 15px;
+}

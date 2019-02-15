@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Master Sheff</title>
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <header class="header" data-uk-sticky>
+    <div class="header__top">
+      <div class="uk-container">
+        <div class="header__top-inner">
+          <div class="header__leftside uk-width-1-5">
+            <a class="logo" href="#">
+              <img src="../img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="header__rightside uk-width-4-5">
+            <nav class="nav">
+              <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="#">Наши клиенты</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Производители</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <a class="header__header-tel header-tel" href="tel:79204228167">
+              <svg class="header-tel__icon">
+                <use xlink:href="#smartphone" />
+              </svg>
+              <span class="header-tel__number">+7 (920) 422-81-67</span>
+            </a>
+            <button class="header-menu-btn js-menu-btn" type="button">
+              <span class="header-menu-btn__line header-menu-btn__line_first"></span>
+              <span class="header-menu-btn__line header-menu-btn__line_second"></span>
+              <span class="header-menu-btn__line header-menu-btn__line_third"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="control-bar">
+      <div class="uk-container">
+        <div class="control-bar__inner">
+          <div class="control-bar__leftside">
+            <button class="control-bar__catalog-btn catalog-btn js-catalog-btn" type="button">
+              <svg class="catalog-btn__icon">
+                <use xlink:href="#menu" />
+              </svg>
+              Каталог
+            </button>
+            <ul class="catalog-short-menu">
+              <li><a href="#">Стекло</a></li>
+              <li><a href="#">Столовая посуда</a></li>
+              <li><a href="#">Сиропы топпинги</a></li>
+              <li><a href="#">Столовые приборы</a></li>
+              <li><a href="#">Новинки</a></li>
+            </ul>
+          </div>
+          <div class="control-bar__rightside">
+            <div class="control-bar__search">
+              <button class="control-bar__search-btn search-btn js-search-btn" type="button">
+                <svg class="search-btn__icon">
+                  <use xlink:href="#search" />
+                </svg>
+              </button>
+            </div>
+            <a class="cart-btn" href="#">
+              <svg class="cart-btn__icon">
+                <use xlink:href="#cart" />
+              </svg>
+              <span class="cart-btn__text">
+                <span>
+                  Товаров: 7
+                </span>
+                <span>
+                  Сумма: 5321 руб.
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="search-bar js-search-bar">
+            <form class="uk-width-1-1">
+              <input class="search__input uk-input" type="search" name="search" placeholder="Искать">
+            </form>
+            <button class="search-bar__close-btn js-search-close" type="button" data-uk-close></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="catalog-full" hidden>
+    <ul>
+      <li>
+        <a class="catalog-full__heading catalog-full__heading_glass" href="#">Стекло</a>
+        <ul>
+          <li><a href="#">Стекло</a></li>
+          <li><a href="#">Столовая посуда</a></li>
+          <li><a href="#">Сиропы топпинги</a></li>
+          <li><a href="#">Столовые приборы</a></li>
+          <li><a href="#">Новинки</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="catalog-full__heading catalog-full__heading_dishes" href="#">Столовая посуда</a>
+        <ul>
+          <li><a href="#">Стекло</a></li>
+          <li><a href="#">Столовая посуда</a></li>
+          <li><a href="#">Сиропы топпинги</a></li>
+          <li><a href="#">Столовые приборы</a></li>
+          <li><a href="#">Новинки</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="catalog-full__heading catalog-full__heading_porcelain" href="#">Фарфор</a>
+        <ul>
+          <li><a href="#">Стекло</a></li>
+          <li><a href="#">Столовая посуда</a></li>
+          <li><a href="#">Сиропы топпинги</a></li>
+          <li><a href="#">Столовые приборы</a></li>
+          <li><a href="#">Новинки</a></li>
+          <li><a href="#">Новинки</a></li>
+          <li><a href="#">Новинки</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="catalog-full__heading catalog-full__heading_japan" href="#">Японская еда</a>
+        <ul>
+          <li><a href="#">Стекло</a></li>
+          <li><a href="#">Столовая посуда</a></li>
+          <li><a href="#">Сиропы топпинги</a></li>
+        </ul>
+      </li>
+      <li><a class="catalog-full__heading catalog-full__heading_new" href="#">Новинки</a></li>
+    </ul>
+    <button class="catalog-full__close-btn uk-close-large js-catalog-close" type="button" data-uk-close></button>
+  </div>
+  <main class="inner-page">
+    <div class="uk-container">
+      <div class="about">
+        <svg width="299" height="263" viewBox="0 0 299 263" class="about__pic">
+          <style>
+              .term-row-1 { 
+                font-family: 'Lato', sans-serif;
+                font-size: 90px;
+                font-weight: 800; 
+                fill: #fff;
+              }
+              .term-row-2 {
+                font-family: 'Lato', sans-serif;
+                font-size: 14px;
+                font-weight: 400; 
+                fill: #fff;
+              }
+            </style>
+            <path transform="translate(-361 -455)" fill="#3c3695" d="M583.502 529.895c0 40.273-32.749 73.038-73.002 73.038-40.253 0-73.002-32.765-73.002-73.038 0-40.273 32.749-73.038 73.002-73.038 40.253 0 73.002 32.764 73.002 73.038zm-14.6 170.576v17.53c-24.992 0-46.837-13.73-58.402-34.045C498.935 704.27 477.09 718 452.099 718v-17.529c24.97 0 45.683-18.544 49.129-42.588a11.613 11.613 0 0 1-2.408-7.078c0-6.444 5.24-11.686 11.68-11.686 6.44 0 11.68 5.242 11.68 11.686 0 2.662-.904 5.111-2.408 7.078 3.445 24.044 24.16 42.589 49.13 42.588zm-46.106-54.453c-3.118-15.408 7.102-29.175 16.703-30.278 6.824 15.784-1.316 30.278-16.703 30.278zm35.074 25.596c-19.614 7.895-34.47-3.572-34.47-19.444 21.865-4.213 33.545 12.075 34.47 19.444zm-1.683-34.035c-5.812-10.487-4.158-28.064 7.108-33.832 11.657 13.072 6.456 30.162-7.108 33.832zm41.04 14.202c-18.966 12.95-34.588 5.062-38.657-8.499 19.01-9.81 34.778.17 38.656 8.499zm-11.566-32.036c-5.502-4.545-14.444-22.695-3.05-34.47 12.976 8.025 17.04 25.506 3.05 34.47zm43.371 1.623c-10.669 17.02-31.45 16.21-39.426 3.135 9.972-10.46 28.076-13.917 39.426-3.135zm-20.388-27.3c-12.668-5.637-18.605-22.971-12.96-32.04 15.136 3.908 22.972 19.197 12.96 32.04zm41.984-11.114c-7.395 22.227-27.057 23.299-36.828 14.519 3.347-8.555 20.965-23.163 36.828-14.519zm-27.456-20.128c-18.094-3.464-23.789-20.02-21.826-26.842 13.027-.724 28.357 9.598 21.826 26.842zm36.836-22.951c.01 24.551-21.01 29.907-30.908 24.693 2.16-15.181 16.42-27.41 30.908-24.693zM627.86 528.68c-8.828 1.576-27.005-4.303-28.63-19.356 15.604-5.105 29.767 3.061 28.63 19.356zm28.634-32.675c4.89 14.324-2.36 34.678-22.456 32.612-1.647-13.004 6.055-30.899 22.456-32.612zm-34.028-1.364c-13.18 5.634-28.73.302-33.057-10.078 17.98-12.773 31.85.374 33.057 10.078zM640.235 455c8.692 12.918 8.327 33.098-11.877 37.775-4.69-8.35-5.055-30.553 11.877-37.775zM481.501 615.74c9.6 1.103 19.821 14.87 16.703 30.278-15.388 0-23.527-14.494-16.703-30.278zm16.099 36.43c0 15.872-14.857 27.34-34.47 19.444.925-7.37 12.605-23.657 34.47-19.444zm-39.895-48.423c11.266 5.768 12.92 23.345 7.107 33.832-13.563-3.67-18.764-20.76-7.107-33.832zm4.725 39.535c-4.07 13.561-19.691 21.45-38.656 8.499 3.878-8.328 19.646-18.31 38.656-8.499zm-24.042-58.008c11.395 11.776 2.452 29.926-3.05 34.471-13.99-8.964-9.926-26.445 3.05-34.47zm-6.994 39.229c-7.976 13.076-28.757 13.886-39.426-3.135 11.35-10.782 29.454-7.325 39.426 3.135zm-6.077-62.475c5.644 9.069-.293 26.403-12.96 32.04-10.013-12.843-2.177-28.132 12.96-32.04zm-18.118 35.445c-9.77 8.78-29.432 7.708-36.827-14.519 15.863-8.643 33.481 5.964 36.827 14.519zm12.455-61.49c1.962 6.824-3.732 23.379-21.826 26.843-6.531-17.244 8.8-27.566 21.826-26.842zM391.9 564.569c-9.899 5.214-30.918-.142-30.908-24.693 14.487-2.716 28.747 9.512 30.908 24.693zm29.868-55.244c-1.624 15.053-19.801 20.932-28.63 19.356-1.136-16.295 13.027-24.461 28.63-19.356zm-34.808 19.293c-20.094 2.066-27.346-18.288-22.455-32.612 16.4 1.713 24.103 19.608 22.455 32.612zm44.63-44.054c-4.328 10.38-19.877 15.712-33.057 10.078 1.207-9.704 15.078-22.851 33.057-10.078zm-38.948 8.212c-20.204-4.677-20.57-24.857-11.877-37.775 16.931 7.222 16.566 29.425 11.877 37.775z"/>
+            <text x="125" y="100" class="term-row-1">5</text>
+            <text x="110" y="120" class="term-row-2">лет на рынке</text>
+          </svg>
+          <div class="about__text">
+            <p>Компания Мастершефф осуществляет свою работу уже более пяти лет и является представителем около 50 различных компаний по производству посуды из 15 стран. </p>
+            <p>Мы давно поставляем посуду для ресторанов, баров и кафе, оптом, а так же в розницу. Купить посуду для ресторана, которая подойдет под ваш имидж и дизайн очень просто, так как на складах Мастершефф постоянно поддерживается широкий ассортимент посуды и инвентаря, необходимый для запуска новых объектов и пополнения уже действующих  и сотрудничающих с нами предприятий.</p>
+           <a class="about__link" href="#">перейти в каталог</a>
+          </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="uk-container">
+      <div class="footer__top uk-child-width-1-2@s uk-child-width-1-4@m" data-uk-grid>
+        <div>
+          <ul class="footer-nav">
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Производители</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer-nav">
+            <li><a href="#">Барное и ресторанное стекло</a></li>
+            <li><a href="#">Столовая посуда</a></li>
+            <li><a href="#">Столовые приборы</a></li>
+            <li><a href="#">Предметы сервировки</a></li>
+            <li><a href="#">Барный инвертарь</a></li>
+            <li><a href="#">Сиропы, топпинги</a></li>
+            <li><a href="#">Кухонный инвертарь</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer-nav">
+            <li><a href="#">Ножи и аксессуары</a></li>
+            <li><a href="#">Кондитерский инвертарь</a></li>
+            <li><a href="#">Фарфор</a></li>
+            <li><a href="#">Инвентарь для пиццы</a></li>
+            <li><a href="#">Японская кухня</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-contacts">
+            Пн-Пт
+            <div class="footer-contacts__worktime">
+              09:00 - 18:00
+            </div>
+            отдел продаж<br>
+            <a class="footer-contacts__number" href="tel:79204228167">+7 (920) 422-81-67</a>
+            <ul class="footer-social">
+              <li>
+                <a href="#">
+                  <svg class="footer-social__icon footer-social__icon_vk">
+                    <use xlink:href="#vk" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="footer-social__icon footer-social__icon_instagram">
+                    <use xlink:href="#instagram" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="footer-social__icon footer-social__icon_facebook">
+                    <use xlink:href="#facebook" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-leftside">
+          © 2018 Посуда оптом для баров и ресторанов <br>
+          ООО “МастерШеф”. Воронеж, ул. Бакунина, д.1
+        </div>
+        <div class="footer__bottom-rightside">
+          Политика конфиденциальности <br>
+          developer
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../bundle.js"></script>
+</body>
+
+</html>
