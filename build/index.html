@@ -31,12 +31,16 @@
                                 <li><a href="#">Контакты</a></li>
                             </ul>
                         </nav>
-                        <a class="header__header-tel header-tel" href="tel:79204228167">
-                            <svg class="header-tel__icon">
-                                <use xlink:href="#smartphone" />
-                            </svg>
-                            <span class="header-tel__number">+7 (920) 422-81-67</span>
-                        </a>
+                        <div class="header__contacts">
+                            <a class="header__header-tel header-tel" href="tel:79204228167">
+                                <svg class="header-tel__icon">
+                                    <use xlink:href="#smartphone" />
+                                </svg>
+                                <span class="header-tel__number">+7 (920) 422-81-67</span>
+                            </a>
+                            <button class="header__callback-btn" type="button"
+                                data-uk-toggle="target: #callback">Заказать звонок</button>
+                        </div>
                         <button class="header-menu-btn js-menu-btn" type="button">
                             <span class="header-menu-btn__line header-menu-btn__line_first"></span>
                             <span class="header-menu-btn__line header-menu-btn__line_second"></span>
@@ -403,6 +407,36 @@
             </div>
         </div>
     </footer>
+    <div id="callback" data-uk-modal>
+        <div class="callback uk-modal-dialog">
+           <div class="callback__image"></div>
+            <div class="callback__content">
+                <h2 class="callback__title">Заказать звонок</h2>
+                <form class="callback__form">
+                    <div class="callback__row">
+                        <label class="callback__label" for="callback-name">
+                            Имя
+                        </label>
+                        <input class="callback__input" id="callback-name" name="callback-name" type="text" required>
+                    </div>
+                    <div class="callback__row">
+                        <label class="callback__label" for="callback-tel">
+                            Телефон
+                        </label>
+                        <input class="callback__input" id="callback-tel" name="callback-name" type="tel" required>
+                    </div>
+                    <button class="callback__submit button button_type_dark" type="submit">отправить</button>
+                    <div class="callback__agreement custom-checkbox">
+                        <input class="custom-checkbox__input" type="checkbox" id="callback-agreement" name="callback-agreement" required>
+                        <label class="custom-checkbox__label" for="callback-agreement">
+                            Я согласен на обработку персональных данных
+                        </label>
+                    </div>
+                </form>
+           </div>
+            <button class="callback__close-btn uk-modal-close" type="button"><span data-uk-icon="icon: close"></span></button>
+        </div>
+    </div>    
     <script src="../bundle.js"></script>
 </body>
 

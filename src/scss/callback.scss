@@ -1,0 +1,97 @@
+.callback {
+  display: flex;
+}
+
+.callback__image {
+  width: 50%;
+  background: url('../img/bg-callback.jpg') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.callback__content {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.callback__title {
+  margin-bottom: 40px;
+  color: #494949;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.callback__row {
+  margin-bottom: 25px;
+}
+
+.callback__label {
+  display: block;
+  color: #494949;
+  cursor: pointer;
+}
+
+.callback__input {
+  width: 260px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: 1px solid #c3c3c3;
+  background-color: #f5f5fa;
+  font-size: 16px;
+  &:focus {
+    box-shadow: 0 0 4px 1px rgba(60, 54, 149, 0.3);
+    border: 1px solid #b7b3f4;
+  }
+}
+
+.callback__submit {
+  margin: 10px 0 15px;
+}
+
+.callback__close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: #494949;
+  cursor: pointer;
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+  &:hover {
+    background-color: $theme-color;
+    color: #fff;
+  }
+}
+
+.callback__agreement label {
+  color: #747474;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: $breakpoint-medium) {
+  .callback {
+    width: 370px;
+  }
+  .callback__image {
+    display: none;
+  }
+  .callback__content {
+    width: 100%;
+  }
+  .callback__input {
+    width: 100%;
+  }
+  .callback__content {
+    padding: 40px 20px;
+  }
+}

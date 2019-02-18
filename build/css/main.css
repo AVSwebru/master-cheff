@@ -4895,7 +4895,7 @@ ul.uk-nav-sub {
   /* 2 */
   box-sizing: border-box;
   margin: 0 auto;
-  width: 600px;
+  width: 740px;
   /* 3 */
   max-width: calc(100% - 0.01px) !important;
   /* 4 */
@@ -10077,11 +10077,30 @@ iframe.uk-cover {
 .header__rightside {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
+  align-self: flex-end;
   padding: 14px 0; }
+
+.header__contacts {
+  align-self: baseline;
+  padding-top: 5px;
+  text-align: right; }
 
 .header__header-tel {
   margin-left: 25px; }
+
+.header__callback-btn {
+  background: none;
+  padding: 0;
+  border: 0;
+  color: #c7c5ef;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer; }
+
+@media (max-width: 1200px) {
+  .header__callback-btn {
+    display: none; } }
 
 .logo {
   position: relative;
@@ -10380,9 +10399,7 @@ iframe.uk-cover {
 .catalog-slide__subtitle {
   margin-bottom: 25px;
   color: #666;
-  font-family: Lato;
-  font-size: 18px;
-  font-weight: 400; }
+  font-size: 18px; }
 
 @media screen and (max-width: 960px) {
   .catalog-slide__title {
@@ -11026,6 +11043,7 @@ a.catalog-full__heading {
   padding: 20px 0;
   border-bottom: 2px solid #ebeeea; }
   .product-item .error {
+    align-self: flex-end;
     margin-top: 10px; }
 
 .product-item__info {
@@ -11511,7 +11529,7 @@ a.catalog-full__heading {
   grid-row-gap: 25px; }
 
 .cart__pool {
-  margin-bottom: 20px; }
+  margin-bottom: 80px; }
 
 .cart__clear-btn {
   float: right;
@@ -11761,7 +11779,8 @@ a.catalog-full__heading {
 
 .brand-item__title {
   display: block;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
 
 .rubl {
   font-family: "ALSRubl", serif; }
@@ -11859,3 +11878,112 @@ a.catalog-full__heading {
     align-items: center; }
   .contacts__pic {
     display: none; } }
+
+.callback {
+  display: flex; }
+
+.callback__image {
+  width: 50%;
+  background: url("../img/bg-callback.jpg") 50% 50% no-repeat;
+  background-size: cover; }
+
+.callback__content {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 40px 60px; }
+
+.callback__title {
+  margin-bottom: 40px;
+  color: #494949;
+  font-size: 24px;
+  font-weight: 700; }
+
+.callback__row {
+  margin-bottom: 25px; }
+
+.callback__label {
+  display: block;
+  color: #494949;
+  cursor: pointer; }
+
+.callback__input {
+  width: 260px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: 1px solid #c3c3c3;
+  background-color: #f5f5fa;
+  font-size: 16px; }
+  .callback__input:focus {
+    box-shadow: 0 0 4px 1px rgba(60, 54, 149, 0.3);
+    border: 1px solid #b7b3f4; }
+
+.callback__submit {
+  margin: 10px 0 15px; }
+
+.callback__close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: #494949;
+  cursor: pointer; }
+  .callback__close-btn svg {
+    width: 18px;
+    height: 18px; }
+  .callback__close-btn:hover {
+    background-color: #3c3695;
+    color: #fff; }
+
+.callback__agreement label {
+  color: #747474;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer; }
+
+@media (max-width: 960px) {
+  .callback {
+    width: 370px; }
+  .callback__image {
+    display: none; }
+  .callback__content {
+    width: 100%; }
+  .callback__input {
+    width: 100%; }
+  .callback__content {
+    padding: 40px 20px; } }
+
+.custom-checkbox__input {
+  display: none; }
+
+.custom-checkbox__label {
+  display: block;
+  position: relative;
+  padding-left: 30px; }
+  .custom-checkbox__label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #c3c3c3;
+    background-color: #f5f5fa; }
+  .custom-checkbox__label::after {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 13px;
+    height: 10px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='13' height='10' viewBox='0 0 13 10'%3E%3Cdefs%3E%3Cpath id='dvvpa' d='M1021.94 574.488l-8.057 8.45a.175.175 0 0 1-.257 0l-4.575-4.798a.195.195 0 0 1 0-.269l1.112-1.166a.175.175 0 0 1 .257 0l3.335 3.498 6.818-7.15a.175.175 0 0 1 .256 0l1.111 1.165a.197.197 0 0 1 0 .27z'/%3E%3C/defs%3E%3Cg%3E%3Cg transform='translate(-1009 -573)'%3E%3Cuse fill='%233c3695' xlink:href='%23dvvpa'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") 50% 50% no-repeat;
+    background-size: contain; }
+
+.custom-checkbox__input:checked + .custom-checkbox__label::after {
+  display: block; }

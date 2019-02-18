@@ -19,10 +19,33 @@
 .header__rightside {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
+    align-self: flex-end;
     padding: 14px 0;
+}
+
+.header__contacts {
+    align-self: baseline;
+    padding-top: 5px;
+    text-align: right;
 }
 
 .header__header-tel {
     margin-left: 25px;
+}
+
+.header__callback-btn {
+    background: none;
+    padding: 0;
+    border: 0;
+    color: #c7c5ef;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: $breakpoint-large) {
+    .header__callback-btn {
+        display: none;
+    }
 }

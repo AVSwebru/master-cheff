@@ -9,8 +9,8 @@
     box-sizing: border-box;
     transition: border-color 0.25s;
     &:hover {
-      border-color: $theme-color;
-      transition: border-color 0.25s;
+        border-color: $theme-color;
+        transition: border-color 0.25s;
     }
 }
 
@@ -26,4 +26,5 @@
 .brand-item__title {
     display: block;
     text-align: center;
+    text-decoration: none;
 }
