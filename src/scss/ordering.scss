@@ -125,6 +125,10 @@
     }
 }
 
+.ordering__payment {
+    margin-bottom: 60px;
+}
+
 @media screen and (max-width: $breakpoint-large) {
     .ordering__grid {
         grid-template-columns: 100%;

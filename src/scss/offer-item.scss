@@ -1,0 +1,28 @@
+.offer-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.offer-item__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 175px;
+  margin: 10px 0;
+}
+
+.offer-item__title {
+  max-width: 170px;
+  margin: 0 0 30px;
+  color: #1a1a1a;
+  font-size: 18px;
+}
+
+.offer-item__price {
+  margin-bottom: 10px;
+  color: #212121;
+  font-size: 22px;
+  font-weight: 800;
+}
