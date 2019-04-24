@@ -1,5 +1,5 @@
 import './uikit';
-// import catalogToggler from './catalog';
+import catalogToggler from './catalog';
 import menuToggler from './menu';
 import searchBarToggler from './search-bar';
 import counter from './counter';
@@ -17,16 +17,16 @@ if (searchToggler && searchBar && searchClose && searchInput) {
   searchBarToggler(searchToggler, searchBar, searchClose, searchInput);
 }
 
-//catalog toggler
-// const catalogElements = {
-//   catalog: document.querySelector('.catalog-full'),
-//   header: document.querySelector('.header'),
-//   catalogBar: document.querySelector('.control-bar'),
-//   catalogOpenBtn: document.querySelector('.js-catalog-btn'),
-//   catalogCloseBtn: document.querySelector('.js-catalog-close'),
-// };
+// catalog toggler
+const catalogElements = {
+  catalog: document.querySelector('.catalog-full'),
+  header: document.querySelector('.header'),
+  catalogBar: document.querySelector('.control-bar'),
+  catalogOpenBtn: document.querySelector('.js-catalog-btn'),
+  catalogCloseBtn: document.querySelector('.js-catalog-close'),
+};
 
-// catalogToggler(catalogElements);
+catalogToggler(catalogElements);
 
 //menu toggler
 const menuBtn = document.querySelector('.js-menu-btn');
