@@ -1,0 +1,35 @@
+.banner {
+  display: flex;
+  background: linear-gradient(to right, #3c3b91 0, transparent 60%),
+    url('../img/banner.jpg') 50% 50% no-repeat;
+  background-size: cover, cover;
+  margin-bottom: 40px;
+}
+
+.banner__dates {
+  margin-right: 20px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 14px;
+  border-left: 1px dashed #fff;
+  transform: scale(-1);
+  writing-mode: vertical-lr;
+}
+
+.banner__main {
+  padding: 40px 0 35px;
+}
+
+.banner__title {
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.banner__subtitle {
+  color: #fff;
+  font-size: 19px;
+  line-height: 1;
+}

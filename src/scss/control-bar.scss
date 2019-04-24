@@ -1,34 +1,48 @@
 .control-bar {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .control-bar__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 60px;
-    position: relative;
-    z-index: 5; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  position: relative;
+  z-index: 5;
 }
 
 .control-bar__leftside {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .control-bar__rightside {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .control-bar__catalog-btn {
-    margin-right: 23px;
+  margin-right: 23px;
 }
 
 .control-bar__search {
-    position: relative;
+  position: relative;
 }
 
 .control-bar__search-btn {
-    margin-right: 18px;
+  display: none;
+  margin-right: 18px;
+  @media (max-width: $breakpoint-small) {
+    display: block;
+  }
+}
+
+.control-bar__search-form {
+  margin-right: 40px;
+  @media (max-width: $breakpoint-medium) {
+    margin-right: 0;
+  }
+  @media (max-width: $breakpoint-small) {
+    display: none;
+  }
 }

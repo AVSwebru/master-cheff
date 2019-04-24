@@ -4403,7 +4403,20 @@ iframe.uk-cover {
   position: relative; }
 
 .control-bar__search-btn {
+  display: none;
   margin-right: 18px; }
+  @media (max-width: 640px) {
+    .control-bar__search-btn {
+      display: block; } }
+
+.control-bar__search-form {
+  margin-right: 40px; }
+  @media (max-width: 960px) {
+    .control-bar__search-form {
+      margin-right: 0; } }
+  @media (max-width: 640px) {
+    .control-bar__search-form {
+      display: none; } }
 
 .catalog-btn {
   padding: 23px 20px 23px 14px;
@@ -5215,47 +5228,6 @@ a.catalog-full__heading {
 @media screen and (max-width: 1200px) {
   .category__grid {
     display: block; } }
-
-.sort-bar {
-  display: flex;
-  border: 2px solid #ebeeea;
-  padding: 20px 25px; }
-
-.sort-bar__text {
-  margin-right: 25px;
-  color: #494949;
-  font-size: 14px;
-  font-weight: 400; }
-
-.sort-bar__btn {
-  margin-right: 20px;
-  color: #494949;
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: none;
-  text-transform: lowercase;
-  background: none;
-  border: none;
-  cursor: pointer; }
-  .sort-bar__btn:hover {
-    color: #494949;
-    text-decoration: none; }
-  .sort-bar__btn.active {
-    font-weight: 700; }
-
-.sort-bar__control {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap; }
-
-@media screen and (max-width: 640px) {
-  .sort-bar {
-    flex-direction: column;
-    padding: 10px; }
-  .sort-bar__btn {
-    padding: 10px 0; }
-  .sort-bar__text {
-    display: none; } }
 
 .product-item {
   display: flex;
@@ -6419,3 +6391,186 @@ a.catalog-full__heading {
   color: #212121;
   font-size: 22px;
   font-weight: 800; }
+
+.page-404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ededeb; }
+
+.page-404__content {
+  width: 800px;
+  height: 500px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 120px;
+  background: url("../img/404-plate.jpg") 50% 50% no-repeat;
+  background-size: contain; }
+
+.page-404__text {
+  margin-bottom: 15px;
+  color: #5c5b6b;
+  font-size: 18px;
+  font-weight: 700; }
+
+.page-404__link {
+  display: inline-block; }
+
+.search-form {
+  position: relative;
+  width: 210px; }
+
+.search-form__input {
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid #4f4f4f; }
+  .search-form__input::-webkit-input-placeholder {
+    color: #4f4f4f;
+    font-size: 14px; }
+  .search-form__input:-ms-input-placeholder {
+    color: #4f4f4f;
+    font-size: 14px; }
+  .search-form__input::-ms-input-placeholder {
+    color: #4f4f4f;
+    font-size: 14px; }
+  .search-form__input::placeholder {
+    color: #4f4f4f;
+    font-size: 14px; }
+
+.search-form__submit {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: none;
+  border: none; }
+
+.search-form__icon {
+  width: 25px;
+  height: 25px;
+  fill: #000; }
+
+.filter-bar {
+  margin-bottom: 45px; }
+
+.filter-bar__type {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px; }
+  .filter-bar__type.opened .filter-bar__list {
+    max-height: 500px;
+    transition: max-height 0s ease-in; }
+  .filter-bar__type.opened .filter-bar__show-all .filter-bar__show-all-icon {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s; }
+
+.filter-bar__type-title {
+  margin-right: 20px;
+  color: #000;
+  font-size: 15px; }
+
+.filter-bar__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 25px;
+  overflow: hidden;
+  transition: max-height 0s ease-in; }
+
+.filter-bar__checkbox {
+  margin-right: 20px;
+  margin-bottom: 10px; }
+
+.filter-bar__show-all {
+  background: none;
+  border: none;
+  white-space: nowrap;
+  color: #3c3695;
+  font-size: 15px;
+  cursor: pointer; }
+
+.filter-bar__show-all-icon {
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s; }
+
+.checkbox {
+  position: relative; }
+
+.checkbox__text {
+  position: relative;
+  padding-left: 25px;
+  white-space: nowrap;
+  color: #5d5c5c;
+  font-size: 12px; }
+  .checkbox__text::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -3px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff; }
+
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+  .checkbox__input:checked + .checkbox__text::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 13px;
+    height: 10px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 442.533 442.533'%3E%3Cpath fill='%233c3695' d='M434.539 98.499l-38.828-38.828c-5.324-5.328-11.799-7.993-19.41-7.993-7.618 0-14.093 2.665-19.417 7.993L169.59 247.248l-83.939-84.225c-5.33-5.33-11.801-7.992-19.412-7.992-7.616 0-14.087 2.662-19.417 7.992L7.994 201.852C2.664 207.181 0 213.654 0 221.269c0 7.609 2.664 14.088 7.994 19.416l103.351 103.349 38.831 38.828c5.327 5.332 11.8 7.994 19.414 7.994 7.611 0 14.084-2.669 19.414-7.994l38.83-38.828L434.539 137.33c5.325-5.33 7.994-11.802 7.994-19.417.004-7.611-2.669-14.084-7.994-19.414z'/%3E%3C/svg%3E%0A") 0 0 no-repeat; }
+  .checkbox__input:focus + .checkbox__text::before {
+    box-shadow: 0 0 1px 1px #3c3695; }
+
+.banner {
+  display: flex;
+  background: linear-gradient(to right, #3c3b91 0, transparent 60%), url("../img/banner.jpg") 50% 50% no-repeat;
+  background-size: cover, cover;
+  margin-bottom: 40px; }
+
+.banner__dates {
+  margin-right: 20px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 14px;
+  border-left: 1px dashed #fff;
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr; }
+
+.banner__main {
+  padding: 40px 0 35px; }
+
+.banner__title {
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1; }
+
+.banner__subtitle {
+  color: #fff;
+  font-size: 19px;
+  line-height: 1; }

@@ -1,0 +1,29 @@
+.search-form {
+  position: relative;
+  width: 210px;
+}
+
+.search-form__input {
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid #4f4f4f;
+  &::placeholder {
+    color: #4f4f4f;
+    font-size: 14px;
+  }
+}
+
+.search-form__submit {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+}
+
+.search-form__icon {
+  width: 25px;
+  height: 25px;
+  fill: #000;
+}

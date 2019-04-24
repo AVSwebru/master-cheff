@@ -44,5 +44,41 @@
     "eslint-config-google": "^0.9.1",
     "gsap": "^2.0.1",
     "scrollmagic": "^2.0.5"
+  },
+  "prettier": {
+    "editor.formatOnSave": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "arrowParens": "always"
+  },
+  "eslintconfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "indent": [
+        "error",
+        4
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-undef": "off"
+    }
   }
 }

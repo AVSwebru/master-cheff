@@ -1,0 +1,53 @@
+.filter-bar {
+  margin-bottom: 45px;
+}
+
+.filter-bar__type {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+  &.opened {
+    .filter-bar__list {
+      max-height: 500px;
+      transition: max-height 0s ease-in;
+    }
+    .filter-bar__show-all {
+      .filter-bar__show-all-icon {
+        transform: rotate(180deg);
+        transition: transform 0.25s;
+      }
+    }
+  }
+}
+
+.filter-bar__type-title {
+  margin-right: 20px;
+  color: #000;
+  font-size: 15px;
+}
+
+.filter-bar__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 25px;
+  overflow: hidden;
+  transition: max-height 0s ease-in;
+}
+
+.filter-bar__checkbox {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.filter-bar__show-all {
+  background: none;
+  border: none;
+  white-space: nowrap;
+  color: #3c3695;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.filter-bar__show-all-icon {
+  transition: transform 0.25s;
+}
