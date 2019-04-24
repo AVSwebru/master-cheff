@@ -22,7 +22,11 @@
 }
 
 .control-bar__catalog-btn {
+  display: none;
   margin-right: 23px;
+  @media (max-width: $breakpoint-medium) {
+    display: block;
+  }
 }
 
 .control-bar__search {
@@ -34,6 +38,7 @@
   margin-right: 18px;
   @media (max-width: $breakpoint-small) {
     display: block;
+    margin-right: 0;
   }
 }
 

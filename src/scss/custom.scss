@@ -47,6 +47,11 @@ $base-h2-font-size: 24px;
   right: 9px;
 }
 
+.uk-textarea {
+  height: 130px;
+  resize: none;
+}
+
 // 4. Import UIkit.
 // @import "uikit/src/scss/uikit-theme.scss";
 // @import 'variables';

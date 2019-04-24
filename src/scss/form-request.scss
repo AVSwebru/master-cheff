@@ -1,0 +1,15 @@
+.form-request {
+}
+
+.form-request__row {
+  margin-bottom: 25px;
+}
+
+.form-requst__columned {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  @media (max-width: $breakpoint-medium) {
+    grid-template-columns: 100%;
+  }
+}

@@ -1,27 +1,23 @@
 .catalog-btn {
-    padding: 23px 20px 23px 14px;
-    background-color: #eaefea;
-    border: none;
-    white-space: nowrap;
-    line-height: 1;
-    cursor: pointer;
+  padding: 23px 20px 23px 14px;
+  background-color: #eaefea;
+  border: none;
+  white-space: nowrap;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  &:hover {
+    background-color: darken(#eaefea, 10%);
     transition: background-color 0.25s;
-    &:hover {
-        background-color: darken(#eaefea, 10%);
-        transition: background-color 0.25s;
-    }
+  }
+  @media (min-width: $breakpoint-medium) {
+    padding: 23px 10px;
+  }
 }
 
 .catalog-btn__icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;
-    fill: $theme-color;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  fill: $theme-color;
 }
-
-@media screen and (max-width: $breakpoint-medium) {
-    .catalog-btn {
-        margin-right: 10px;
-        padding: 23px 10px;
-    }
-}	

@@ -1,0 +1,16 @@
+.request__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 60px;
+  @media (max-width: $breakpoint-small) {
+    display: block;
+  }
+}
+
+.request__bg {
+  background: url('../img/bg-request.png') 50% 0 no-repeat;
+  background-size: contain;
+  @media (max-width: $breakpoint-small) {
+    display: none;
+  }
+}

@@ -4,6 +4,10 @@
   position: absolute;
   right: 9px; }
 
+.uk-textarea {
+  height: 130px;
+  resize: none; }
+
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -4571,7 +4575,11 @@ iframe.uk-cover {
   align-items: center; }
 
 .control-bar__catalog-btn {
+  display: none;
   margin-right: 23px; }
+  @media (max-width: 960px) {
+    .control-bar__catalog-btn {
+      display: block; } }
 
 .control-bar__search {
   position: relative; }
@@ -4581,7 +4589,8 @@ iframe.uk-cover {
   margin-right: 18px; }
   @media (max-width: 640px) {
     .control-bar__search-btn {
-      display: block; } }
+      display: block;
+      margin-right: 0; } }
 
 .control-bar__search-form {
   margin-right: 40px; }
@@ -4603,17 +4612,15 @@ iframe.uk-cover {
   .catalog-btn:hover {
     background-color: #cdd9cd;
     transition: background-color 0.25s; }
+  @media (min-width: 960px) {
+    .catalog-btn {
+      padding: 23px 10px; } }
 
 .catalog-btn__icon {
   width: 16px;
   height: 16px;
   margin-right: 6px;
   fill: #3c3695; }
-
-@media screen and (max-width: 960px) {
-  .catalog-btn {
-    margin-right: 10px;
-    padding: 23px 10px; } }
 
 .catalog-short-menu {
   display: flex;
@@ -5272,8 +5279,7 @@ a.catalog-full__heading {
 .catalog__title-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
-  padding-left: 20px; }
+  margin-bottom: 40px; }
   @media (max-width: 960px) {
     .catalog__title-wrapper {
       display: block; } }
@@ -6807,3 +6813,29 @@ a.catalog-full__heading {
       box-shadow: 0 0 0px var(--shadow-width) #3c3695;
       box-shadow: 0 0 0px var(--shadow-width) #3c3695;
       background: #3c3695; }
+
+.request__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 60px; }
+  @media (max-width: 640px) {
+    .request__grid {
+      display: block; } }
+
+.request__bg {
+  background: url("../img/bg-request.png") 50% 0 no-repeat;
+  background-size: contain; }
+  @media (max-width: 640px) {
+    .request__bg {
+      display: none; } }
+
+.form-request__row {
+  margin-bottom: 25px; }
+
+.form-requst__columned {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px; }
+  @media (max-width: 960px) {
+    .form-requst__columned {
+      grid-template-columns: 100%; } }
