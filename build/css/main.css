@@ -6866,3 +6866,52 @@ a.catalog-full__heading {
   @media (max-width: 960px) {
     .form-requst__columned {
       grid-template-columns: 100%; } }
+
+.price__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  @media (max-width: 640px) {
+    .price__grid {
+      grid-template-columns: 100%; } }
+
+.price__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 178px;
+  border-top: 1px solid #c6c4dd;
+  border-right: 1px solid #c6c4dd;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 600; }
+  .price__item:hover {
+    background-color: #3c3695;
+    text-decoration: none;
+    color: #fff; }
+    .price__item:hover .price__item-download-icon {
+      display: block; }
+    .price__item:hover .price__item-doc-icon {
+      display: none; }
+  .price__item:nth-of-type(2n-1) {
+    border-left: 1px solid #c6c4dd; }
+  .price__item:nth-last-child(2), .price__item:nth-last-child(1) {
+    border-bottom: 1px solid #c6c4dd; }
+  @media (max-width: 640px) {
+    .price__item {
+      border-top: 1px solid #c6c4dd;
+      border-right: 1px solid #c6c4dd;
+      border-left: 1px solid #c6c4dd; }
+      .price__item:last-of-type {
+        border-bottom: 1px solid #c6c4dd; } }
+
+.price__item-download-icon {
+  display: none;
+  width: 55px;
+  height: 55px;
+  margin-right: 30px; }
+
+.price__item-doc-icon {
+  width: 55px;
+  height: 110px;
+  margin-right: 30px; }

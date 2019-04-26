@@ -1,0 +1,59 @@
+.price__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: $breakpoint-small) {
+    grid-template-columns: 100%;
+  }
+}
+
+.price__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 178px;
+  border-top: 1px solid #c6c4dd;
+  border-right: 1px solid #c6c4dd;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 600;
+  &:hover {
+    background-color: #3c3695;
+    text-decoration: none;
+    color: #fff;
+    .price__item-download-icon {
+      display: block;
+    }
+    .price__item-doc-icon {
+      display: none;
+    }
+  }
+  &:nth-of-type(2n-1) {
+    border-left: 1px solid #c6c4dd;
+  }
+  &:nth-last-child(2),
+  &:nth-last-child(1) {
+    border-bottom: 1px solid #c6c4dd;
+  }
+  @media (max-width: $breakpoint-small) {
+    border-top: 1px solid #c6c4dd;
+    border-right: 1px solid #c6c4dd;
+    border-left: 1px solid #c6c4dd;
+    &:last-of-type {
+      border-bottom: 1px solid #c6c4dd;
+    }
+  }
+}
+
+.price__item-download-icon {
+  display: none;
+  width: 55px;
+  height: 55px;
+  margin-right: 30px;
+}
+
+.price__item-doc-icon {
+  width: 55px;
+  height: 110px;
+  margin-right: 30px;
+}
