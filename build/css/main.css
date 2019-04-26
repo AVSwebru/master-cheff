@@ -4788,10 +4788,13 @@ iframe.uk-cover {
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1;
-  cursor: pointer;
   transition: background-color 0.25s;
   text-decoration: none;
-  white-space: nowrap; }
+  white-space: nowrap;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer; }
   .button_type_dark {
     background-color: #3c3695;
     color: #fff; }
@@ -5410,13 +5413,12 @@ a.catalog-full__heading {
   grid-template-columns: 290px auto;
   grid-gap: 40px;
   align-items: flex-start; }
+  @media (max-width: 1200px) {
+    .category__grid {
+      grid-template-columns: 100%; } }
 
 .category__sort-bar {
   margin-bottom: 35px; }
-
-@media screen and (max-width: 1200px) {
-  .category__grid {
-    display: block; } }
 
 .product-item {
   display: flex;
@@ -5727,6 +5729,15 @@ a.catalog-full__heading {
 .product__desc-title {
   color: #1a1a1a;
   font-size: 20px; }
+
+.product__messagers {
+  margin-top: 20px;
+  color: #2b2b2b;
+  font-size: 14px;
+  font-weight: 500; }
+
+.product__messager-link {
+  margin-left: 5px; }
 
 @media screen and (max-width: 1200px) {
   .product__grid {
@@ -6653,7 +6664,7 @@ a.catalog-full__heading {
   align-items: baseline;
   margin-bottom: 20px; }
   .filter-bar__type.opened .filter-bar__list {
-    max-height: 500px;
+    max-height: 100%;
     transition: max-height 0s ease-in; }
   .filter-bar__type.opened .filter-bar__show-all .filter-bar__show-all-icon {
     -webkit-transform: rotate(180deg);
@@ -6661,11 +6672,18 @@ a.catalog-full__heading {
     transition: -webkit-transform 0.25s;
     transition: transform 0.25s;
     transition: transform 0.25s, -webkit-transform 0.25s; }
+  @media (max-width: 960px) {
+    .filter-bar__type {
+      display: block; } }
 
 .filter-bar__type-title {
   margin-right: 20px;
   color: #000;
   font-size: 15px; }
+  @media (max-width: 960px) {
+    .filter-bar__type-title {
+      margin-right: 0;
+      margin-bottom: 20px; } }
 
 .filter-bar__list {
   display: flex;
@@ -6673,10 +6691,19 @@ a.catalog-full__heading {
   max-height: 25px;
   overflow: hidden;
   transition: max-height 0s ease-in; }
+  @media (max-width: 960px) {
+    .filter-bar__list {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-bottom: 20px; } }
 
 .filter-bar__checkbox {
   margin-right: 20px;
-  margin-bottom: 10px; }
+  margin-bottom: 20px;
+  white-space: nowrap; }
+  @media (max-width: 960px) {
+    .filter-bar__checkbox {
+      margin-right: 0; } }
 
 .filter-bar__show-all {
   background: none;

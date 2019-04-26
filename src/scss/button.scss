@@ -1,25 +1,26 @@
 .button {
-    padding: 15px 40px;
-    border-radius: 12px;
-    border: none;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 1;
-    cursor: pointer;
+  padding: 15px 40px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  transition: background-color 0.25s;
+  text-decoration: none;
+  white-space: nowrap;
+  appearance: none;
+  cursor: pointer;
+  &_type_dark {
+    background-color: $theme-color;
+    color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: darken($theme-color, 10%);
+    }
+  }
+  &:hover {
     transition: background-color 0.25s;
     text-decoration: none;
-    white-space: nowrap;
-    &_type_dark {
-        background-color: $theme-color;
-        color: #fff;
-        &:hover {
-            color: #fff;
-            background-color: darken($theme-color, 10%);
-        }
-    }
-    &:hover {
-        transition: background-color 0.25s;
-        text-decoration: none;
-    }
+  }
 }
