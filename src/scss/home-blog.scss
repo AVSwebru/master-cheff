@@ -1,0 +1,19 @@
+.home-blog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 225px);
+  grid-column-gap: 90px;
+  grid-row-gap: 45px;
+  padding-bottom: 130px;
+  @media (max-width: $breakpoint-small) {
+    justify-content: center;
+  }
+}
+
+.home-blog__title {
+  margin-bottom: 35px;
+  text-align: center;
+  color: #555555;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

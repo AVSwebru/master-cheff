@@ -6505,13 +6505,24 @@ a.catalog-full__heading {
     order: 1; } }
 
 .blog-item {
-  display: flex;
   text-decoration: none; }
   .blog-item:hover {
     text-decoration: none; }
-  @media (max-width: 640px) {
-    .blog-item {
-      display: block; } }
+  .blog-item_home {
+    display: block; }
+    .blog-item_home .blog-item__img-wrapper {
+      margin-bottom: 25px; }
+    .blog-item_home .blog-item__title {
+      margin: 0;
+      font-size: 18px; }
+  .blog-item_blog {
+    display: flex; }
+    .blog-item_blog .blog-item__title {
+      margin: 0 0 15px;
+      font-size: 20px; }
+    @media (max-width: 640px) {
+      .blog-item_blog {
+        display: block; } }
 
 .blog-item__img-wrapper {
   display: block;
@@ -6524,31 +6535,14 @@ a.catalog-full__heading {
       margin-right: 0;
       margin-bottom: 25px; } }
 
-.blog-item__date {
-  display: inline-block;
-  min-width: 100px;
-  box-sizing: border-box;
-  padding: 10px;
-  border: 1px solid #c6c4dd;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 14px;
-  color: #6c67a2;
-  line-height: 1; }
-
 .blog-item__title {
   display: block;
-  margin: 0 0 15px;
-  font-size: 20px;
-  color: #3c3695;
-  line-height: 1; }
+  color: #3c3695; }
 
 .blog-item__desc {
   display: block;
   font-size: 16px;
-  color: #666;
-  line-height: 1; }
+  color: #666; }
 
 .offer {
   width: 290px;
@@ -6915,3 +6909,40 @@ a.catalog-full__heading {
   width: 55px;
   height: 110px;
   margin-right: 30px; }
+
+.home-blog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 225px);
+  grid-column-gap: 90px;
+  grid-row-gap: 45px;
+  padding-bottom: 130px; }
+  @media (max-width: 640px) {
+    .home-blog__grid {
+      justify-content: center; } }
+
+.home-blog__title {
+  margin-bottom: 35px;
+  text-align: center;
+  color: #555555;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.date {
+  display: inline-block;
+  min-width: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #c6c4dd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #6c67a2;
+  line-height: 1; }
+
+.article__date {
+  margin-bottom: 15px; }
+
+.article__text {
+  color: #1b1b1d; }
