@@ -5691,11 +5691,14 @@ a.catalog-full__heading {
   align-items: flex-start;
   margin-bottom: 100px; }
 
-.product__image {
+.product__image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 70px; }
+
+.product__image {
+  max-height: 300px; }
 
 .product__text {
   border-bottom: 2px solid #ebeeea;
@@ -6946,3 +6949,13 @@ a.catalog-full__heading {
 
 .article__text {
   color: #1b1b1d; }
+
+.manager {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.manager__text {
+  margin-right: 50px;
+  color: #000;
+  font-size: 36px; }

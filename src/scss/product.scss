@@ -22,11 +22,15 @@
   margin-bottom: 100px;
 }
 
-.product__image {
+.product__image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 70px;
+}
+
+.product__image {
+  max-height: 300px;
 }
 
 .product__text {
