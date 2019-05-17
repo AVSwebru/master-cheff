@@ -18,15 +18,8 @@
   grid-template-columns: 415px 280px;
   grid-column-gap: 70px;
   grid-row-gap: 35px;
-  align-items: flex-start;
-  margin-bottom: 100px;
-}
-
-.product__image-wrapper {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  margin-right: 70px;
+  margin-bottom: 100px;
 }
 
 .product__image {
